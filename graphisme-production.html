@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comptabilité Informatisée et Gestion | CFPC Dream Real-ICT</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="Image/Logo Rond.png" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header (Top Bar + Navigation) -->
+    <div class="bg-[#1b6086] text-white text-sm py-2 shadow-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div
+            class="flex flex-wrap items-center justify-center md:justify-start gap-x-6 gap-y-2 mb-2 md:mb-0"
+          >
+            <div class="flex items-center group">
+              <i
+                class="fas fa-map-marker-alt mr-2 text-[#56b94c] transform transition-transform group-hover:scale-110"
+              ></i>
+              <span
+                class="group-hover:text-[#56b94c] transition-colors duration-300"
+                >Yaoundé, Alpha Manguier</span
+              >
+            </div>
+            <div class="hidden md:flex items-center group">
+              <span class="transition-colors duration-300"
+                >(Rez de chaussée Hôtel Lieugne)</span
+              >
+            </div>
+            <div class="flex items-center group">
+              <i
+                class="fab fa-whatsapp mr-2 text-[#56b94c] transform transition-transform group-hover:scale-110"
+              ></i>
+              <a
+                href="https://wa.me/237699000563"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-[#56b94c] transition-colors duration-300"
+                >+237 699 00 05 63</a
+              >
+            </div>
+          </div>
+          <div class="flex space-x-4">
+            <a
+              href="https://web.facebook.com/cfpcdreamreal/?_rdc=1&_rdr"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f text-lg"></i>
+            </a>
+            <a
+              href="https://wa.me/237677710707"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="WhatsApp"
+            >
+              <i class="fab fa-whatsapp text-lg"></i>
+            </a>
+            <a
+              href="mailto:cfpcdreamreal@gmail.com"
+              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="Gmail"
+            >
+              <i class="far fa-envelope text-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation -->
+    <nav
+      class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300"
+      id="mainNav"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-20">
+          <a
+            href="index.html"
+            class="flex items-center group"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <img
+              src="Image/Logo Rond.png"
+              alt="CFPC Dream Real-ICT Logo"
+              class="h-12 w-auto transform transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+            <span class="ml-3 text-xl font-bold text-[#1b6086] hidden sm:inline"
+              >CFPC Dream Real-ICT</span
+            >
+          </a>
+          <div class="hidden md:flex items-center space-x-1">
+            <a
+              href="index.html"
+              class="relative px-4 py-2 text-[#1b6086] font-medium group"
+              ><span class="relative z-10">Accueil</span
+              ><span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-[#56b94c] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+              ></span
+            ></a>
+            <a
+              href="a-propos.html"
+              class="relative px-4 py-2 text-gray-600 hover:text-[#1b6086] font-medium group"
+              ><span class="relative z-10">À propos</span
+              ><span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-[#56b94c] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+              ></span
+            ></a>
+            <a
+              href="formations.html"
+              class="relative px-4 py-2 text-gray-600 hover:text-[#1b6086] font-medium group"
+              ><span class="relative z-10">Formations</span
+              ><span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-[#56b94c] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+              ></span
+            ></a>
+            <a
+              href="contact.html"
+              class="relative px-4 py-2 text-gray-600 hover:text-[#1b6086] font-medium group"
+              ><span class="relative z-10">Contact</span
+              ><span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-[#56b94c] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+              ></span
+            ></a>
+            <a
+              href="inscription.html"
+              class="ml-4 bg-gradient-to-r from-[#56b94c] to-[#3da734] text-white px-6 py-2.5 rounded-full font-medium hover:opacity-90 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >S'inscrire à une formation</a
+            >
+          </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-gray-700 hover:text-[#1b6086] focus:outline-none p-2 rounded-full hover:bg-gray-100 transition-colors duration-200"
+              aria-label="Menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                class="h-6 w-6 transform transition-transform duration-200"
+                id="menu-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden bg-white shadow-xl transform origin-top transition-all duration-300 ease-in-out"
+    >
+      <div class="px-2 pt-2 pb-4 space-y-1">
+        <a
+          href="index.html"
+          class="flex px-4 py-3 text-[#1b6086] font-medium bg-gray-50 rounded-lg items-center"
+        >
+          <i class="fas fa-home w-5 mr-2 text-[#56b94c]"></i>
+          Accueil
+        </a>
+        <a
+          href="a-propos.html"
+          class="flex px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#1b6086] rounded-lg transition-colors duration-200 items-center"
+        >
+          <i class="fas fa-info-circle w-5 mr-2 text-[#56b94c]"></i>
+          À propos
+        </a>
+        <a
+          href="formations.html"
+          class="flex px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#1b6086] rounded-lg transition-colors duration-200 items-center"
+        >
+          <i class="fas fa-graduation-cap w-5 mr-2 text-[#56b94c]"></i>
+          Formations
+        </a>
+        <a
+          href="contact.html"
+          class="flex px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#1b6086] rounded-lg transition-colors duration-200 items-center"
+        >
+          <i class="fas fa-envelope w-5 mr-2 text-[#56b94c]"></i>
+          Contact
+        </a>
+        <a
+          href="inscription.html"
+          class="block mx-2 mt-2 text-center bg-gradient-to-r from-[#56b94c] to-[#3da734] text-white px-4 py-2.5 rounded-lg font-medium hover:opacity-90 transition-opacity duration-200"
+        >
+          <i class="fas fa-user-plus mr-2"></i>
+          S'inscrire à une formation
+        </a>
+      </div>
+    </div>
+
+    <!-- En-tête de page -->
+    <section class="max-w-3xl mx-auto text-center py-16" data-aos="fade-down">
+      <img
+        src="Image/Diplomante/IG.png"
+        alt="Comptabilité informatisée et gestion"
+        class="mx-auto mb-6 rounded-xl shadow-lg w-70 h-60 object-cover"
+      />
+      <h1 class="text-4xl font-bold mb-4">Graphisme de Production</h1>
+      <p class="text-lg text-gray-700">
+        Donnez Vie à Votre Créativité et Impactez Visuellement
+      </p>
+    </section>
+
+    <!-- Présentation -->
+    <section
+      class="max-w-4xl mx-auto bg-white rounded-xl shadow p-8 mb-10"
+      data-aos="fade-up"
+    >
+      <h2 class="text-2xl font-bold mb-4 text-[#1b6086]">
+        <i class="fas fa-info-circle mr-2"></i>Présentation de la formation
+      </h2>
+      <p class="text-gray-700 mb-4">
+        La formation en Graphisme de Production à Dream Real est votre tremplin
+        pour transformer votre passion pour l'image en une carrière dynamique et
+        visible. Dans un monde où le visuel est roi, maîtrisez les logiciels
+        professionnels et les techniques de design graphique. Devenez un acteur
+        clé de la communication visuelle au Cameroun, capable d'apporter une
+        vraie valeur ajoutée aux marques et aux entreprises
+      </p>
+      <h3 class="text-2xl font-bold mb-4 text-[#1b6086]">
+        <i class="fas fa-certificate mr-2"></i>Diplôme obtenu
+      </h3>
+      <p class="text-gray-700 mb-4">
+        Diplôme de qualification professionnel (DQP)
+      </p>
+    </section>
+
+    <!-- Objectifs de la formation -->
+    <section
+      class="max-w-4xl mx-auto bg-white rounded-xl shadow p-8 mb-10"
+      data-aos="fade-up"
+    >
+      <h2 class="text-2xl font-bold mb-4 text-[#1b6086]">
+        <i class="fas fa-bullseye mr-2"></i>Objectifs de la Formation
+      </h2>
+      <ul class="list-disc pl-6 text-gray-700 space-y-2">
+        <li>
+          Maîtriser les logiciels de création graphique standards de l'industrie
+          (Adobe Photoshop, Illustrator, InDesign).
+        </li>
+        <li>
+          Concevoir des identités visuelles complètes et des chartes graphiques
+          cohérentes.
+        </li>
+        <li>
+          Créer divers supports de communication imprimés (affiches, brochures,
+          cartes de visite) et numériques (bannières web, visuels pour réseaux
+          sociaux).
+        </li>
+        <li>
+          Appliquer les principes fondamentaux du design : typographie,
+          couleurs, composition, hiérarchie visuelle.
+        </li>
+        <li>
+          Préparer des fichiers pour l'impression ou la diffusion numérique avec
+          qualité professionnelle.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Débouchés professionnels -->
+    <section
+      class="max-w-4xl mx-auto bg-white rounded-xl shadow p-8 mb-10"
+      data-aos="fade-up"
+    >
+      <h2 class="text-2xl font-bold mb-4 text-[#1b6086]">
+        <i class="fas fa-briefcase mr-2"></i>Débouchés Professionnels
+      </h2>
+      <p class="text-gray-700 mb-4">
+        Avec un diplôme en Graphisme de Production de Dream Real, les
+        opportunités sont nombreuses dans le secteur en pleine croissance de la
+        communication et de la publicité. Vous pourrez travailler comme :
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 space-y-2">
+        <li>Graphiste</li>
+        <li>Infographiste</li>
+        <li>Maquettiste</li>
+        <li>Designer Graphique</li>
+        <li>Illustrateur Digital</li>
+      </ul>
+      <p class="text-gray-700 mt-4">
+        Vous trouverez des opportunités dans dans le secteur en pleine
+        croissance de la communication et de la publicité
+      </p>
+    </section>
+
+    <!-- Conditions d'admission -->
+    <section
+      class="max-w-4xl mx-auto bg-white rounded-xl shadow p-8 mb-10"
+      data-aos="fade-up"
+    >
+      <h2 class="text-2xl font-bold mb-4 text-[#1b6086]">
+        <i class="fas fa-user-graduate mr-2"></i>Conditions d'admission
+      </h2>
+      <ul class="list-disc pl-6 text-gray-700 space-y-2">
+        <li>Niveau d'étude : Terminale / Upper Sixth</li>
+        <li>Intérêt pour le dessin, l'art et la communication visuelle.</li>
+        <li>Des notions de base en informatique sont un plus.</li>
+      </ul>
+    </section>
+
+    <!-- Documents requis -->
+    <section
+      class="max-w-4xl mx-auto bg-white rounded-xl shadow p-8 mb-10"
+      data-aos="fade-up"
+    >
+      <h2 class="text-2xl font-bold mb-4 text-[#1b6086]">
+        <i class="fas fa-file-alt mr-2"></i>Documents requis
+      </h2>
+      <ul class="list-disc pl-6 text-gray-700 space-y-2">
+        <li>Photocopie du diplome ou du bulletin</li>
+        <li>Photocopie de la CNI</li>
+        <li>Une RAME de papie A4 (80g)</li>
+        <li>3 photos 4X4</li>
+        <li>Fiche d'inscription à remplir</li>
+      </ul>
+    </section>
+
+    <!-- Format de la formation -->
+    <section
+      class="max-w-4xl mx-auto bg-white rounded-xl shadow p-8 mb-10"
+      data-aos="fade-up"
+    >
+      <h2 class="text-2xl font-bold mb-4 text-[#1b6086]">
+        <i class="fas fa-clock mr-2"></i>Format de la Formation
+      </h2>
+      <ul class="list-disc pl-6 text-gray-700 space-y-2">
+        <li>
+          <span class="font-semibold">Durée :</span> 12 mois (9 mois de cours +
+          3 mois de stage en entreprise)
+        </li>
+        <li>
+          <span class="font-semibold">Rythme :</span> Temps plein, Cours du jour
+          et du soir
+        </li>
+        <li>
+          <span class="font-semibold">Mode :</span> Présentiel dans nos locaux
+        </li>
+      </ul>
+    </section>
+
+    <!-- Coûts et modalités de paiement -->
+    <section
+      class="max-w-4xl mx-auto bg-white rounded-xl shadow p-8 mb-10"
+      data-aos="fade-up"
+    >
+      <h2 class="text-2xl font-bold mb-4 text-[#1b6086]">
+        <i class="fas fa-money-bill-wave mr-2"></i>Coûts et Modalités de
+        Paiement
+      </h2>
+      <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+        <li>
+          Frais d'inscription : <span class="font-semibold">20 000 FCFA</span>
+        </li>
+        <li>
+          Coût de la formation :
+          <span class="font-semibold">250 000 FCFA</span>
+        </li>
+      </ul>
+      <div class="text-gray-700 mb-1">
+        <span class="font-semibold"> Autres frais :</span>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li>Frais d'examen : 25 000 FCFA</li>
+          <li>Frais de timbre : 5 000 FCFA</li>
+          <li>Livret de stage : 2 000 FCFA</li>
+          <li>Encadrement et soutenace : 30 000 FCFA</li>
+          <li>Uniforme (Polo) : 5 000 FCFA</li>
+        </ul>
+      </div>
+      <div class="text-gray-700 mb-3">
+        <span class="font-semibold">Possibilités de paiement :</span>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li>Paiement intégral à l'inscription.</li>
+          <li>
+            Paiement en plusieurs tranches (un acompte à l'inscription en X
+            mensualités).
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Bloc appel à l'action avant le footer -->
+    <div class="max-w-3xl mx-auto my-12">
+      <div
+        class="bg-white rounded-xl shadow-lg flex flex-col md:flex-row items-center justify-between p-8 gap-6"
+      >
+        <div class="flex-1">
+          <p
+            class="text-lg font-semibold mb-2 flex items-center gap-2 text-[#1b6086]"
+          >
+            <i class="fas fa-bolt"></i>Passez à l'action
+          </p>
+          <p class="text-gray-700 mb-4">
+            Contactez-nous pour obtenir des informations personnalisées ou
+            inscrivez-vous dès maintenant pour rejoindre la prochaine
+            session&nbsp;!
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-4">
+          <a
+            href="contact.html"
+            class="px-6 py-3 bg-white text-[#1b6086] border border-[#1b6086] rounded-lg font-semibold shadow hover:bg-[#1b6086] hover:text-white transition text-center"
+            >Contactez-nous</a
+          >
+          <a
+            href="inscription.html"
+            class="px-6 py-3 bg-[#56b94c] text-white rounded-lg font-semibold shadow hover:bg-[#3da734] transition text-center"
+            >S'inscrire</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-[#1b6086] text-white py-12 mt-16" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
+        <!-- Logo et texte -->
+        <div>
+          <div class="font-bold text-2xl mb-2">CFPC Dream Real-ICT</div>
+          <div>Réalisez vos rêves avec nous</div>
+        </div>
+        <!-- Liens rapides -->
+        <div>
+          <div class="font-semibold mb-2">Liens rapides</div>
+          <ul class="space-y-1">
+            <li><a href="index.html" class="hover:underline">Accueil</a></li>
+            <li>
+              <a href="a-propos.html" class="hover:underline">À propos</a>
+            </li>
+            <li>
+              <a href="formations.html" class="hover:underline">Formations</a>
+            </li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Types de formations -->
+        <div>
+          <div class="font-semibold mb-2">Types de formations</div>
+          <ul class="space-y-1">
+            <li>
+              <a href="/formations.html#diplomantes" class="hover:underline"
+                >Diplômantes</a
+              >
+            </li>
+            <li>
+              <a href="/formations.html#continues" class="hover:underline"
+                >Continues</a
+              >
+            </li>
+            <li>
+              <a href="/formations.html#qualifiantes" class="hover:underline"
+                >Qualifiantes</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Contact et réseaux sociaux -->
+        <div>
+          <div class="font-semibold mb-2">Nous contacter</div>
+          <div class="flex items-center gap-2 mb-1">
+            <span>📞</span> <span>(+237) 699 00 05 63</span>
+          </div>
+          <div class="flex items-center gap-2 mb-1">
+            <span>📞</span> <span>(+237) 6 77 71 07 07</span>
+          </div>
+          <div class="flex gap-3 mt-2">
+            <a
+              href="https://web.facebook.com/cfpcdreamreal/?_rdc=1&_rdr"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f text-lg"></i>
+            </a>
+            <a
+              href="https://wa.me/237677710707"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="WhatsApp"
+            >
+              <i class="fab fa-whatsapp text-lg"></i>
+            </a>
+            <a
+              href="mailto:cfpcdreamreal@gmail.com"
+              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="Gmail"
+            >
+              <i class="far fa-envelope text-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-xs text-white mt-8 opacity-80">
+        © Copyright 2025 CFPC Dream Real-ICT designed by Dream Real-ICT
+      </div>
+    </footer>
+
+    <script>
+      if (typeof AOS !== "undefined") {
+        AOS.init({
+          duration: 800,
+          easing: "ease-in-out",
+          once: true,
+          mirror: false,
+        });
+      }
+    </script>
+  </body>
+</html>

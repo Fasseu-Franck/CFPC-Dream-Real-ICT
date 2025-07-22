@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      CFPC Dream Real-ICT - Votre tremplin vers le succès professionnel dans le
+      domaine du numérique
+    </title>
+    <meta
+      name="description"
+      content="CFPC Dream Real-ICT - Centre de formation professionnelle offrant des formations diplômantes, continues et qualifiantes dans le domaine du numérique."
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="Image/Logo Rond.png" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- AOS.js -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- Swiper.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="main.js" defer></script>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Top Bar -->
+    <div class="bg-[#1b6086] text-white text-sm py-2 shadow-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div
+            class="flex flex-wrap items-center justify-center md:justify-start gap-x-6 gap-y-2 mb-2 md:mb-0"
+          >
+            <div class="flex items-center group">
+              <i
+                class="fas fa-map-marker-alt mr-2 text-[#56b94c] transform transition-transform group-hover:scale-110"
+              ></i>
+              <span
+                class="group-hover:text-[#56b94c] transition-colors duration-300"
+                >Yaoundé, Alpha Manguier</span
+              >
+            </div>
+            <div class="hidden md:flex items-center group">
+              <span class="transition-colors duration-300"
+                >(Rez de chaussée Hôtel Lieugne)</span
+              >
+            </div>
+            <div class="flex items-center group">
+              <i
+                class="fab fa-whatsapp mr-2 text-[#56b94c] transform transition-transform group-hover:scale-110"
+              ></i>
+              <a
+                href="https://wa.me/237699000563"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-[#56b94c] transition-colors duration-300"
+                >+237 699 00 05 63</a
+              >
+            </div>
+          </div>
+
+          <div class="flex space-x-4">
+            <a
+              href="https://web.facebook.com/cfpcdreamreal/?_rdc=1&_rdr"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f text-lg"></i>
+            </a>
+            <a
+              href="https://wa.me/237677710707"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="WhatsApp"
+            >
+              <i class="fab fa-whatsapp text-lg"></i>
+            </a>
+            <a
+              href="mailto:cfpcdreamreal@gmail.com"
+              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="Gmail"
+            >
+              <i class="far fa-envelope text-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav
+      class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300"
+      id="mainNav"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo -->
+          <a
+            href="index.html"
+            class="flex items-center group"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <img
+              src="Image/Logo Rond.png"
+              alt="CFPC Dream Real-ICT Logo"
+              class="h-12 w-auto transform transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+            <span class="ml-3 text-xl font-bold text-[#1b6086] hidden sm:inline"
+              >CFPC Dream Real-ICT</span
+            >
+          </a>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center space-x-1">
+            <a
+              href="index.html"
+              class="relative px-4 py-2 text-[#1b6086] font-medium group"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
+              <span class="relative z-10">Accueil</span>
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-[#56b94c] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+              ></span>
+            </a>
+
+            <a
+              href="a-propos.html"
+              class="relative px-4 py-2 text-gray-600 hover:text-[#1b6086] font-medium group"
+              data-aos="fade-down"
+              data-aos-delay="150"
+            >
+              <span class="relative z-10">À propos</span>
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-[#56b94c] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+              ></span>
+            </a>
+
+            <a
+              href="formations.html"
+              class="relative px-4 py-2 text-gray-600 hover:text-[#1b6086] font-medium group"
+              data-aos="fade-down"
+              data-aos-delay="200"
+            >
+              <span class="relative z-10">Formations</span>
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-[#56b94c] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+              ></span>
+            </a>
+
+            <a
+              href="contact.html"
+              class="relative px-4 py-2 text-gray-600 hover:text-[#1b6086] font-medium group"
+              data-aos="fade-down"
+              data-aos-delay="250"
+            >
+              <span class="relative z-10">Contact</span>
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-[#56b94c] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+              ></span>
+            </a>
+
+            <a
+              href="inscription.html"
+              class="ml-4 bg-gradient-to-r from-[#56b94c] to-[#3da734] text-white px-6 py-2.5 rounded-full font-medium hover:opacity-90 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              data-aos="fade-down"
+              data-aos-delay="300"
+              ><i class="fas fa-user-plus mr-2"></i>
+              S'inscrire à une formation
+            </a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-gray-700 hover:text-[#1b6086] focus:outline-none p-2 rounded-full hover:bg-gray-100 transition-colors duration-200"
+              aria-label="Menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                class="h-6 w-6 transform transition-transform duration-200"
+                id="menu-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white shadow-xl transform origin-top transition-all duration-300 ease-in-out"
+      >
+        <div class="px-2 pt-2 pb-4 space-y-1">
+          <a
+            href="index.html"
+            class="flex px-4 py-3 text-[#1b6086] font-medium bg-gray-50 rounded-lg items-center"
+          >
+            <i class="fas fa-home w-5 mr-2 text-[#56b94c]"></i>
+            Accueil
+          </a>
+          <a
+            href="a-propos.html"
+            class="flex px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#1b6086] rounded-lg transition-colors duration-200 items-center"
+          >
+            <i class="fas fa-info-circle w-5 mr-2 text-[#56b94c]"></i>
+            À propos
+          </a>
+
+          <a
+            href="formations.html"
+            class="flex px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#1b6086] rounded-lg transition-colors duration-200 items-center"
+          >
+            <i class="fas fa-graduation-cap w-5 mr-2 text-[#56b94c]"></i>
+            Formations
+          </a>
+          <a
+            href="contact.html"
+            class="flex px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#1b6086] rounded-lg transition-colors duration-200 items-center"
+          >
+            <i class="fas fa-envelope w-5 mr-2 text-[#56b94c]"></i>
+            Contact
+          </a>
+          <a
+            href="inscription.html"
+            class="block mx-2 mt-2 text-center bg-gradient-to-r from-[#56b94c] to-[#3da734] text-white px-4 py-2.5 rounded-lg font-medium hover:opacity-90 transition-opacity duration-200"
+          >
+            <i class="fas fa-user-plus mr-2"></i>
+            S'inscrire à une formation
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header (Bannière Héro) -->
+    <header
+      class="relative flex items-center justify-center bg-center"
+      style="
+        height: 400px;
+        background-image: url('Image/Banniere.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div
+        class="relative z-10 text-center text-white max-w-2xl mx-auto"
+        data-aos="fade-down"
+      >
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">CFPC Dream Real-ICT</h1>
+        <p class="text-lg md:text-2xl mb-6">
+          Votre tremplin vers le succès professionnel numérique.
+        </p>
+        <div
+          class="flex flex-col md:flex-row gap-4 justify-center items-center"
+        >
+          <a
+            href="C:\Users\FASSEU\OneDrive\Desktop\Dream Real-ICT\formations.html"
+            class="px-6 py-3 bg-[#56b94c] text-white font-semibold rounded-lg shadow hover:bg-[#449c3a] transition w-auto max-w-xs mx-auto"
+            >Découvrez nos formations</a
+          >
+          <a
+            href="C:\Users\FASSEU\OneDrive\Desktop\Dream Real-ICT\a-propos.html"
+            class="px-6 py-3 bg-white text-[#1b6086] font-semibold rounded-lg shadow hover:bg-[#56b94c] hover:text-white transition w-auto max-w-xs mx-auto border border-[#1b6086]"
+            >À propos de nous</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Section Ce pourquoi nous luttons -->
+    <section class="max-w-6xl mx-auto py-16 px-4">
+      <h2 class="text-4xl font-bold text-center mb-10" data-aos="fade-down">
+        Ce pour quoi nous luttons.. ✊
+      </h2>
+
+      <!-- Ligne 1: Image à gauche, texte à droite -->
+      <div class="flex flex-col md:flex-row items-center gap-8 mb-12">
+        <div class="md:w-1/2" data-aos="fade-right">
+          <img
+            src="Image/Emploi.jpg"
+            alt="Accès rapide à l'emploi"
+            class="rounded-3xl shadow-lg w-full h-64 object-cover"
+          />
+        </div>
+        <div class="md:w-1/2" data-aos="fade-left">
+          <div class="bg-white rounded-3xl shadow-md p-8">
+            <h3 class="font-semibold text-xl mb-4 text-[#1b6086]">
+              🚀 Un accès rapide à l'emploi
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Des formations conçues pour une insertion professionnelle efficace
+              et rapide.
+            </p>
+            <a
+              href="formations.html"
+              class="text-[#56b94c] font-semibold hover:underline inline-flex items-center"
+            >
+              Découvrir nos formations
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ligne 2: Texte à gauche, image à droite -->
+      <div class="flex flex-col md:flex-row items-center gap-8 mb-12">
+        <div class="md:w-1/2" data-aos="fade-right">
+          <div class="bg-white rounded-3xl shadow-md p-8">
+            <h3 class="font-semibold text-xl mb-4 text-[#1b6086]">
+              🛠️ Des Compétences concrètes
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Des savoir-faire pratiques et adaptés aux besoins du marché du
+              travail.
+            </p>
+            <a
+              href="formations.html"
+              class="text-[#56b94c] font-semibold hover:underline inline-flex items-center"
+            >
+              Découvrir nos formations
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+        <div class="md:w-1/2" data-aos="fade-left">
+          <img
+            src="Image/competences.jpg"
+            alt="Compétences concrètes"
+            class="rounded-3xl shadow-lg w-full h-64 object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- Ligne 3: Image à gauche, texte à droite -->
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="md:w-1/2" data-aos="fade-right">
+          <img
+            src="Image/Diplome (2).jpg"
+            alt="Certifications reconnues"
+            class="rounded-3xl shadow-lg w-full h-64 object-cover"
+          />
+        </div>
+        <div class="md:w-1/2" data-aos="fade-left">
+          <div class="bg-white rounded-3xl shadow-md p-8">
+            <h3 class="font-semibold text-xl mb-4 text-[#1b6086]">
+              🎓 Des certifications reconnues par l'État
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Des diplômes et attestations reconnus pour valoriser votre
+              parcours.
+            </p>
+            <a
+              href="formations.html"
+              class="text-[#56b94c] font-semibold hover:underline inline-flex items-center"
+            >
+              Découvrir nos formations
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Nos Formations (Aperçu) -->
+    <section class="max-w-6xl mx-auto py-16 px-4">
+      <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-down">
+        Nos types de formations
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="bg-white rounded-xl shadow p-6 text-center"
+          data-aos="fade-in"
+        >
+          <div class="text-4xl mb-3">🎓</div>
+          <h3 class="font-semibold mb-2">Diplômantes & Certifiantes</h3>
+          <p class="text-gray-600 mb-2">
+            Formations longues, sanctionnées par un diplôme ou un certificat de
+            qualification professionnel.
+          </p>
+          <a
+            href="C:\Users\FASSEU\OneDrive\Desktop\Dream Real-ICT\formations.html"
+            class="text-[#56b94c] font-semibold hover:underline"
+            >Voir toutes les formations</a
+          >
+        </div>
+        <div
+          class="bg-white rounded-xl shadow p-6 text-center"
+          data-aos="fade-in"
+          data-aos-delay="200"
+        >
+          <div class="text-4xl mb-3">⏳</div>
+          <h3 class="font-semibold mb-2">Continues</h3>
+          <p class="text-gray-600 mb-2">
+            Formations courtes pour renforcer vos compétences. Sanctionnées par
+            une Attestation de qualification professionnelle
+          </p>
+          <a
+            href="C:\Users\FASSEU\OneDrive\Desktop\Dream Real-ICT\formations.html"
+            class="text-[#56b94c] font-semibold hover:underline"
+            >Voir toutes les formations</a
+          >
+        </div>
+        <div
+          class="bg-white rounded-xl shadow p-6 text-center"
+          data-aos="fade-in"
+          data-aos-delay="200"
+        >
+          <div class="text-4xl mb-3">🏅</div>
+          <h3 class="font-semibold mb-2">À la carte</h3>
+          <p class="text-gray-600 mb-2">
+            Modules spécialisés pour des besoins précis. Sanctionnées par une
+            Attestation de fin de formation.
+          </p>
+          <a
+            href="C:\Users\FASSEU\OneDrive\Desktop\Dream Real-ICT\formations.html"
+            class="text-[#56b94c] font-semibold hover:underline"
+            >Voir toutes les formations</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Nos Chiffres Clés -->
+    <section class="max-w-6xl mx-auto py-16 px-4">
+      <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-down">
+        Une expérience acquise..
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div
+          class="bg-white rounded-xl shadow p-6 text-center"
+          data-aos="zoom-in"
+        >
+          <div
+            class="text-4xl font-bold text-[#1b6086] mb-2 counter"
+            data-target="4"
+          >
+            0
+          </div>
+          <div class="text-gray-600">Années d'Expérience</div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow p-6 text-center"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <div
+            class="text-4xl font-bold text-[#1b6086] mb-2 counter"
+            data-target="20"
+          >
+            0
+          </div>
+          <div class="text-gray-600">Formateurs Qualifiés</div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow p-6 text-center"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <div
+            class="text-4xl font-bold text-[#1b6086] mb-2 counter"
+            data-target="30"
+          >
+            0
+          </div>
+          <div class="text-gray-600">Formations Accessibles</div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow p-6 text-center"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          <div
+            class="text-4xl font-bold text-[#1b6086] mb-2 counter"
+            data-target="50"
+          >
+            0
+          </div>
+          <div class="text-gray-600">Étudiants Formés</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Nos Atouts -->
+    <section class="max-w-6xl mx-auto py-16 px-4">
+      <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-down">
+        De sérieux atouts..
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div
+          class="bg-white rounded-2xl shadow p-6 text-center"
+          data-aos="fade-up"
+        >
+          <div class="text-4xl mb-3">🕒</div>
+          <h3 class="font-semibold mb-2">Flexibilité</h3>
+          <p class="text-gray-600">
+            Des horaires adaptés à votre rythme de vie.
+          </p>
+        </div>
+        <div
+          class="bg-white rounded-2xl shadow p-6 text-center"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="text-4xl mb-3">🤝</div>
+          <h3 class="font-semibold mb-2">Accompagnement</h3>
+          <p class="text-gray-600">
+            Un suivi personnalisé tout au long de votre parcours.
+          </p>
+        </div>
+        <div
+          class="bg-white rounded-2xl shadow p-6 text-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="text-4xl mb-3">💻</div>
+          <h3 class="font-semibold mb-2">Matériel de pointe</h3>
+          <p class="text-gray-600">
+            Des équipements modernes pour un apprentissage optimal.
+          </p>
+        </div>
+        <div
+          class="bg-white rounded-2xl shadow p-6 text-center"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div class="text-4xl mb-3">🌐</div>
+          <h3 class="font-semibold mb-2">Réseau professionnel</h3>
+          <p class="text-gray-600">
+            Des opportunités grâce à notre réseau d'entreprises partenaires.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Partenaires -->
+    <section class="max-w-6xl mx-auto py-12 px-12">
+      <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-down">
+        Ils nous font confiance..
+      </h2>
+      <div class="swiper partenaires-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex items-center justify-center">
+            <img
+              src="Image/Partenaire5.png"
+              alt="Partenaire 5"
+              class="h-20 w-40 object-contain mx-auto"
+            />
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <img
+              src="Image/Partenaire1.jpg"
+              alt="Partenaire 1"
+              class="h-20 w-40 object-contain mx-auto"
+            />
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <img
+              src="Image/Partenaire22.png"
+              alt="Partenaire 2"
+              class="h-20 w-40 object-contain mx-auto"
+            />
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <img
+              src="Image/Partenaire3.png"
+              alt="Partenaire 3"
+              class="h-20 w-40 object-contain mx-auto"
+            />
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <img
+              src="Image/Partenaire44.png"
+              alt="Partenaire 4"
+              class="h-20 w-40 object-contain mx-auto"
+            />
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <img
+              src="Image/59.png"
+              alt="Partenaire 5"
+              class="h-20 w-40 object-contain mx-auto"
+            />
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <img
+              src="Image/60.png"
+              alt="Partenaire 7"
+              class="h-20 w-40 object-contain mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Témoignages (Swiper.js) -->
+    <section class="max-w-6xl mx-auto py-16 px-4 bg -[#1b6086]">
+      <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-down">
+        Ce que disent nos apprenants..
+      </h2>
+      <div class="swiper testimonials-swiper" data-aos="fade-in">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div
+            class="swiper-slide bg-white rounded-xl shadow p-6 text-center flex flex-col items-center"
+          >
+            <p class="italic mb-4">
+              "Grâce à Dream Real-ICT, j'ai eu accès à une formation poussée et
+              de qualité pour trouver un emploi !"
+            </p>
+            <div class="font-semibold">- Marie, Secrétaire bureautique</div>
+          </div>
+          <!-- Slide 2 -->
+          <div
+            class="swiper-slide bg-white rounded-xl shadow p-6 text-center flex flex-col items-center"
+          >
+            <p class="italic mb-4">
+              "Des formateurs à l'écoute et un accompagnement au top. Ils sont
+              des passsionnés et des experts dans leur domaine. "
+            </p>
+            <div class="font-semibold">- Paul, Webmestre</div>
+          </div>
+          <!-- Slide 3 -->
+          <div
+            class="swiper-slide bg-white rounded-xl shadow p-6 text-center flex flex-col items-center"
+          >
+            <p class="italic mb-4">
+              "J'ai pu me reconvertir facilement dans le numérique."
+            </p>
+            <div class="font-semibold">- Amina, Webmestre</div>
+          </div>
+          <!-- Slide 4 -->
+          <div
+            class="swiper-slide bg-white rounded-xl shadow p-6 text-center flex flex-col items-center"
+          >
+            <p class="italic mb-4">
+              "Jusqu'à la, j'ai eu des difficultés à trouver un emploi, mais
+              grâce à Dream Real-ICT, j'ai pu me reconvertir et trouver un
+              emploi."
+            </p>
+            <div class="font-semibold">- Serge, Comptable</div>
+          </div>
+          <!-- Slide 5 -->
+          <div
+            class="swiper-slide bg-white rounded-xl shadow p-6 text-center flex flex-col items-center"
+          >
+            <p class="italic mb-4">
+              "Du début jusqu'à la fin, Dream Real-ICT m'a accompagné et m'a
+              donné les outils nécessaires pour etre pret à l'examen national et
+              à entrer dans le monde du travail."
+            </p>
+            <div class="font-semibold">- Chantal, Graphiste</div>
+          </div>
+          <!-- Slide 6 -->
+          <div
+            class="swiper-slide bg-white rounded-xl shadow p-6 text-center flex flex-col items-center"
+          >
+            <p class="italic mb-4">
+              "j'ai particulierement apprecies le respect de chacun de mes
+              besoins et de ses exigences et leur engagement envers moi."
+            </p>
+            <div class="font-semibold">- Lionel, Graphiste</div>
+          </div>
+          <!-- Slide 7 -->
+          <div
+            class="swiper-slide bg-white rounded-xl shadow p-6 text-center flex flex-col items-center"
+          >
+            <p class="italic mb-4">
+              "J'ai recommandé Dream Real-ICT à tous mes amis et je suis
+              convaincu qu'ils seront satisfaits de leur formation,
+              contrairement à de nombreux centres de formation, ils ne mentent
+              pas et sont sérieux."
+            </p>
+            <div class="font-semibold">- Fatou, Stagiaire</div>
+          </div>
+          <!-- Slide 8 -->
+          <div
+            class="swiper-slide bg-white rounded-xl shadow p-6 text-center flex flex-col items-center"
+          >
+            <p class="italic mb-4">
+              "Ce qui m'a touché c'est qu'ils se battent pour une insertion
+              professionelle, un réseau professionnel qui ouvre des portes."
+            </p>
+            <div class="font-semibold">- Kevin, Diplômé</div>
+          </div>
+        </div>
+        <!-- Pagination & navigation -->
+        <div class="swiper-pagination mt-4"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!-- Section FAQ -->
+    <section class="max-w-4xl mx-auto py-16 px-4">
+      <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-down">
+        Foire Aux Questions (FAQ)
+      </h2>
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="bg-white rounded-lg shadow p-4" data-aos="fade-up">
+          <button
+            class="w-full text-left font-semibold flex justify-between items-center faq-toggle"
+          >
+            <span>Quels sont les prérequis pour s'inscrire ?</span>
+            <span class="text-xl">+</span>
+          </button>
+          <div class="faq-content hidden mt-2 text-gray-600">
+            Aucun prérequis n'est nécessaire pour la plupart de nos formations.
+            La motivation et l'engagement sont essentiels !
+          </div>
+        </div>
+        <!-- FAQ 2 -->
+        <div
+          class="bg-white rounded-lg shadow p-4"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <button
+            class="w-full text-left font-semibold flex justify-between items-center faq-toggle"
+          >
+            <span>Les diplômes sont-ils reconnus ?</span>
+            <span class="text-xl">+</span>
+          </button>
+          <div class="faq-content hidden mt-2 text-gray-600">
+            Oui, nos diplômes et attestations sont reconnus par l'État
+            camerounais.
+          </div>
+        </div>
+        <!-- FAQ 3 -->
+        <div
+          class="bg-white rounded-lg shadow p-4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <button
+            class="w-full text-left font-semibold flex justify-between items-center faq-toggle"
+          >
+            <span>Peut-on suivre les formations à distance ?</span>
+            <span class="text-xl">+</span>
+          </button>
+          <div class="faq-content hidden mt-2 text-gray-600">
+            Certaines formations sont disponibles en présentiel et à distance.
+            Contactez-nous pour plus d'informations.
+          </div>
+        </div>
+        <!-- FAQ 4 -->
+        <div
+          class="bg-white rounded-lg shadow p-4"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <button
+            class="w-full text-left font-semibold flex justify-between items-center faq-toggle"
+          >
+            <span>Comment financer ma formation ?</span>
+            <span class="text-xl">+</span>
+          </button>
+          <div class="faq-content hidden mt-2 text-gray-600">
+            Nous proposons des facilités de paiement et des solutions adaptées à
+            chaque situation.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1b6086] text-white py-12 mt-16" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
+        <!-- Logo et texte -->
+        <div class="flex flex-col items-start">
+          <div class="font-bold text-2xl mb-2">CFPC Dream Real-ICT</div>
+          <div>Réalisez vos rêves avec nous</div>
+        </div>
+        <!-- Liens rapides -->
+        <div>
+          <div class="font-semibold mb-2">Liens rapides</div>
+          <ul class="space-y-1">
+            <li><a href="index.html" class="hover:underline">Accueil</a></li>
+            <li>
+              <a href="a-propos.html" class="hover:underline">À propos</a>
+            </li>
+            <li>
+              <a href="formations.html" class="hover:underline">Formations</a>
+            </li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Types de formations -->
+        <div>
+          <div class="font-semibold mb-2">Types de formations</div>
+          <ul class="space-y-1">
+            <li>
+              <a href="/formations.html#diplomantes" class="hover:underline"
+                >Diplômantes</a
+              >
+            </li>
+            <li>
+              <a href="/formations.html#continues" class="hover:underline"
+                >Continues</a
+              >
+            </li>
+            <li>
+              <a href="/formations.html#qualifiantes" class="hover:underline"
+                >Qualifiantes</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Contact et réseaux sociaux -->
+        <div>
+          <div class="font-semibold mb-2">Nous contacter</div>
+          <div class="flex items-center gap-2 mb-1">
+            <span>📞</span> <span>(+237) 699 00 05 63</span>
+          </div>
+          <div class="flex items-center gap-2 mb-1">
+            <span>📞</span> <span>(+237) 6 77 71 07 07</span>
+          </div>
+          <div class="flex gap-3 mt-2">
+            <a
+              href="https://web.facebook.com/cfpcdreamreal/?_rdc=1&_rdr"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f text-lg"></i>
+            </a>
+            <a
+              href="https://wa.me/237677710707"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="WhatsApp"
+            >
+              <i class="fab fa-whatsapp text-lg"></i>
+            </a>
+            <a
+              href="mailto:cfpcdreamreal@gmail.com"
+              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="Gmail"
+            >
+              <i class="far fa-envelope text-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-xs text-white mt-8 opacity-80">
+        © Copyright 2025 CFPC Dream Real-ICT designed by Dream Real-ICT
+      </div>
+    </footer>
+  </body>
+</html>

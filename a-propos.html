@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À propos | CFPC Dream Real-ICT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="Image/Logo Rond.png" />
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Header (Top Bar + Navigation) -->
+    <!-- Top Bar -->
+    <div class="bg-[#1b6086] text-white text-sm py-2 shadow-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div
+            class="flex flex-wrap items-center justify-center md:justify-start gap-x-6 gap-y-2 mb-2 md:mb-0"
+          >
+            <div class="flex items-center group">
+              <i
+                class="fas fa-map-marker-alt mr-2 text-[#56b94c] transform transition-transform group-hover:scale-110"
+              ></i>
+              <span
+                class="group-hover:text-[#56b94c] transition-colors duration-300"
+                >Yaoundé, Alpha Manguier</span
+              >
+            </div>
+            <div class="hidden md:flex items-center group">
+              <span class="transition-colors duration-300"
+                >(Rez de chaussée Hôtel Lieugne)</span
+              >
+            </div>
+            <div class="flex items-center group">
+              <i
+                class="fab fa-whatsapp mr-2 text-[#56b94c] transform transition-transform group-hover:scale-110"
+              ></i>
+              <a
+                href="https://wa.me/237699000563"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-[#56b94c] transition-colors duration-300"
+                >+237 699 00 05 63</a
+              >
+            </div>
+          </div>
+          <div class="flex space-x-4">
+            <a
+              href="https://web.facebook.com/cfpcdreamreal/?_rdc=1&_rdr"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f text-lg"></i>
+            </a>
+            <a
+              href="https://wa.me/237677710707"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="WhatsApp"
+            >
+              <i class="fab fa-whatsapp text-lg"></i>
+            </a>
+            <a
+              href="mailto:cfpcdreamreal@gmail.com"
+              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="Gmail"
+            >
+              <i class="far fa-envelope text-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav
+      class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300"
+      id="mainNav"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo -->
+          <a
+            href="index.html"
+            class="flex items-center group"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <img
+              src="Image/Logo Rond.png"
+              alt="CFPC Dream Real-ICT Logo"
+              class="h-12 w-auto transform transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+            <span class="ml-3 text-xl font-bold text-[#1b6086] hidden sm:inline"
+              >CFPC Dream Real-ICT</span
+            >
+          </a>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center space-x-1">
+            <a
+              href="index.html"
+              class="relative px-4 py-2 text-[#1b6086] font-medium group"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
+              <span class="relative z-10">Accueil</span>
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-[#56b94c] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+              ></span>
+            </a>
+
+            <a
+              href="a-propos.html"
+              class="relative px-4 py-2 text-gray-600 hover:text-[#1b6086] font-medium group"
+              data-aos="fade-down"
+              data-aos-delay="150"
+            >
+              <span class="relative z-10">À propos</span>
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-[#56b94c] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+              ></span>
+            </a>
+
+            <a
+              href="formations.html"
+              class="relative px-4 py-2 text-gray-600 hover:text-[#1b6086] font-medium group"
+            >
+              <span class="relative z-10">Formations</span>
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-[#56b94c] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+              ></span>
+            </a>
+
+            <a
+              href="contact.html"
+              class="relative px-4 py-2 text-gray-600 hover:text-[#1b6086] font-medium group"
+              data-aos="fade-down"
+              data-aos-delay="250"
+            >
+              <span class="relative z-10">Contact</span>
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-[#56b94c] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+              ></span>
+            </a>
+
+            <a
+              href="inscription.html"
+              class="ml-4 bg-gradient-to-r from-[#56b94c] to-[#3da734] text-white px-6 py-2.5 rounded-full font-medium hover:opacity-90 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              data-aos="fade-down"
+              data-aos-delay="300"
+              ><i class="fas fa-user-plus mr-2"></i>
+              S'inscrire à une formation
+            </a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-gray-700 hover:text-[#1b6086] focus:outline-none p-2 rounded-full hover:bg-gray-100 transition-colors duration-200"
+              aria-label="Menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                class="h-6 w-6 transform transition-transform duration-200"
+                id="menu-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white shadow-xl transform origin-top transition-all duration-300 ease-in-out"
+      >
+        <div class="px-2 pt-2 pb-4 space-y-1">
+          <a
+            href="index.html"
+            class="flex px-4 py-3 text-[#1b6086] font-medium bg-gray-50 rounded-lg items-center"
+          >
+            <i class="fas fa-home w-5 mr-2 text-[#56b94c]"></i>
+            Accueil
+          </a>
+          <a
+            href="a-propos.html"
+            class="flex px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#1b6086] rounded-lg transition-colors duration-200 items-center"
+          >
+            <i class="fas fa-info-circle w-5 mr-2 text-[#56b94c]"></i>
+            À propos
+          </a>
+          <a
+            href="formations.html"
+            class="flex px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#1b6086] rounded-lg transition-colors duration-200 items-center"
+          >
+            <i class="fas fa-graduation-cap w-5 mr-2 text-[#56b94c]"></i>
+            Formations
+          </a>
+
+          <a
+            href="contact.html"
+            class="flex px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#1b6086] rounded-lg transition-colors duration-200 items-center"
+          >
+            <i class="fas fa-envelope w-5 mr-2 text-[#56b94c]"></i>
+            Contact
+          </a>
+
+          <a
+            href="inscription.html"
+            class="block mx-2 mt-2 text-center bg-gradient-to-r from-[#56b94c] to-[#3da734] text-white px-4 py-2.5 rounded-lg font-medium hover:opacity-90 transition-opacity duration-200"
+          >
+            <i class="fas fa-user-plus mr-2"></i>
+            S'inscrire à une formation
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      // Initialize AOS (Animate On Scroll)
+      if (typeof AOS !== "undefined") {
+        AOS.init({
+          duration: 800,
+          easing: "ease-in-out",
+          once: true,
+          mirror: false,
+        });
+      }
+    </script>
+
+    <!-- En-tête de page -->
+    <section class="max-w-3xl mx-auto text-center py-16" data-aos="fade-down">
+      <h1 class="text-4xl font-bold mb-4 rounded-xl">À propos de nous</h1>
+      <p class="text-lg text-gray-700 rounded-xl">
+        CFPC Dream Real-ICT, centre de formation depuis 4 ans, accompagne la
+        jeunesse camerounaise vers la réussite professionnelle à l'ère du
+        numérique.
+      </p>
+    </section>
+
+    <!-- Notre histoire (Timeline verticale) -->
+    <section class="max-w-4xl mx-auto py-12">
+      <h2 class="text-3xl font-bold mb-8 text-center" data-aos="fade-down">
+        Notre histoire
+      </h2>
+      <div class="relative">
+        <!-- Ligne centrale uniquement sur desktop -->
+        <div
+          class="hidden md:block absolute left-1/2 top-0 h-full w-1 bg-[#1b6086] transform -translate-x-1/2"
+        ></div>
+        <!-- Timeline events -->
+        <div class="space-y-12">
+          <!-- Événement 1 -->
+          <div
+            class="relative flex flex-col md:flex-row items-center md:items-start group"
+            data-aos="fade-right"
+          >
+            <div
+              class="md:w-1/2 md:pr-8 md:text-right flex justify-end md:justify-end"
+            >
+              <div class="bg-white shadow-md rounded-2xl p-6 w-full md:w-2/3">
+                <span class="text-[#1b6086] font-bold">2020</span>
+                <h3 class="font-semibold text-lg">
+                  Création et ouverture du centre
+                </h3>
+                <p class="text-gray-600">
+                  CFPC Dream Real-ICT ouvre ses portes à Yaoundé pour répondre
+                  aux besoins de formation professionnelle dans le domaine du
+                  numérique.
+                </p>
+              </div>
+            </div>
+            <div class="hidden md:flex flex-col items-center w-0 md:w-10">
+              <div
+                class="w-5 h-5 bg-[#1b6086] rounded-full border-4 border-white shadow absolute left-1/2 top-1 md:top-8 transform -translate-x-1/2"
+              ></div>
+            </div>
+            <div class="md:w-1/2"></div>
+          </div>
+          <!-- Événement 2 -->
+          <div
+            class="relative flex flex-col md:flex-row items-center md:items-start group"
+            data-aos="fade-left"
+          >
+            <div class="md:w-1/2"></div>
+            <div class="hidden md:flex flex-col items-center w-0 md:w-10">
+              <div
+                class="w-5 h-5 bg-[#1b6086] rounded-full border-4 border-white shadow absolute left-1/2 top-1 md:top-8 transform -translate-x-1/2"
+              ></div>
+            </div>
+            <div class="md:w-1/2 md:pl-8 flex justify-start md:justify-start">
+              <div
+                class="bg-gray-100 shadow-md rounded-2xl p-6 w-full md:w-2/3"
+              >
+                <span class="text-[#1b6086] font-bold">2021</span>
+                <h3 class="font-semibold text-lg">
+                  Première promotion diplômée
+                </h3>
+                <p class="text-gray-600">
+                  Nos premiers étudiants obtiennent leur diplôme de
+                  qualification reconnu par l'État.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Événement 3 -->
+          <div
+            class="relative flex flex-col md:flex-row items-center md:items-start group"
+            data-aos="fade-right"
+          >
+            <div
+              class="md:w-1/2 md:pr-8 md:text-right flex justify-end md:justify-end"
+            >
+              <div class="bg-white shadow-md rounded-2xl p-6 w-full md:w-2/3">
+                <span class="text-[#1b6086] font-bold">2023</span>
+                <h3 class="font-semibold text-lg">Nouveaux programmes</h3>
+                <p class="text-gray-600">
+                  Lancement de plusieurs formations continues et qualifiantes
+                  pour répondre à la demande du marché faites par les
+                  entreprises et les professionnels.
+                </p>
+              </div>
+            </div>
+            <div class="hidden md:flex flex-col items-center w-0 md:w-10">
+              <div
+                class="w-5 h-5 bg-[#1b6086] rounded-full border-4 border-white shadow absolute left-1/2 top-1 md:top-8 transform -translate-x-1/2"
+              ></div>
+            </div>
+            <div class="md:w-1/2"></div>
+          </div>
+          <!-- Événement 4 -->
+          <div
+            class="relative flex flex-col md:flex-row items-center md:items-start group"
+            data-aos="fade-left"
+          >
+            <div class="md:w-1/2"></div>
+            <div class="hidden md:flex flex-col items-center w-0 md:w-10">
+              <div
+                class="w-5 h-5 bg-[#1b6086] rounded-full border-4 border-white shadow absolute left-1/2 top-1 md:top-8 transform -translate-x-1/2"
+              ></div>
+            </div>
+            <div class="md:w-1/2 md:pl-8 flex justify-start md:justify-start">
+              <div
+                class="bg-gray-100 shadow-md rounded-2xl p-6 w-full md:w-2/3"
+              >
+                <span class="text-[#1b6086] font-bold">2024</span>
+                <h3 class="font-semibold text-lg">Cap sur l'avenir</h3>
+                <p class="text-gray-600">
+                  Développement de nouveaux partenariats et ouverture vers vers
+                  un accompagnement plus large de nos étudiants.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notre mission -->
+    <section class="max-w-5xl mx-auto py-12">
+      <h2 class="text-3xl font-bold mb-8 text-center" data-aos="fade-down">
+        Notre mission
+      </h2>
+      <!-- Mission 1 -->
+      <div class="flex flex-col md:flex-row items-center gap-8 mb-8">
+        <div class="md:w-1/2" data-aos="fade-right">
+          <img
+            src="Image/Mission.jpg"
+            alt="Mission"
+            class="rounded-3xl shadow-lg w-full h-64 object-cover"
+          />
+        </div>
+        <div class="md:w-1/2" data-aos="fade-left">
+          <p class="text-lg text-gray-700 rounded-3xl bg-white p-6 shadow-md">
+            <span class="font-semibold"
+              >Démocratiser l'accès aux compétences informatiques</span
+            ><br /><br />
+            Offrir à chacun les compétences numériques et professionnelles
+            nécessaires pour s'insérer durablement dans le monde du travail,
+            grâce à des formations innovantes, accessibles et reconnues.
+          </p>
+        </div>
+      </div>
+      <!-- Mission 2 -->
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="md:w-1/2" data-aos="fade-left">
+          <p class="text-lg text-gray-700 rounded-3xl bg-white p-6 shadow-md">
+            <span class="font-semibold">Accompagner la reconversion</span
+            ><br /><br />
+            Pour les jeunes, les adultes, les employés et bien d'autres. Nous
+            voulons permettre à chacun, quel que soit son âge ou son niveau
+            initial, de s'épanouir professionnellement. Il n'est jamais trop
+            tard pour apprendre. Nous croyons en l'apprentissage tout au long de
+            la vie.
+          </p>
+        </div>
+        <div class="md:w-1/2" data-aos="fade-right">
+          <img
+            src="Image/Competence (1).jpg"
+            alt="Reconversion professionnelle"
+            class="rounded-3xl shadow-lg w-full h-64 object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Nos valeurs -->
+    <section class="max-w-5xl mx-auto py-12">
+      <h2 class="text-3xl font-bold mb-8 text-center" data-aos="fade-down">
+        Nos valeurs
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Valeur 1 -->
+        <div
+          class="bg-slate-50 white shadow-md rounded-2xl p-6 text-center hover:shadow-xl hover:bg-gray-100 transition"
+          data-aos="zoom-in"
+          data-aos-delay="0"
+        >
+          <div class="mb-3 text-3xl">🌟</div>
+          <h3 class="font-semibold mb-2">Excellence</h3>
+          <p class="text-gray-600 text-sm">
+            Nous visons l'excellence dans la qualité de nos formations et de
+            notre accompagnement.
+          </p>
+        </div>
+        <!-- Valeur 2 -->
+        <div
+          class="bg-white shadow-md rounded-2xl p-6 text-center hover:shadow-xl hover:bg-gray-100 transition"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <div class="mb-3 text-3xl">🤝</div>
+          <h3 class="font-semibold mb-2">Accessibilité</h3>
+          <p class="text-gray-600 text-sm">
+            Des formations ouvertes à tous, quel que soit le parcours ou le
+            niveau initial.
+          </p>
+        </div>
+        <!-- Valeur 3 -->
+        <div
+          class="bg-white shadow-md rounded-2xl p-6 text-center hover:shadow-xl hover:bg-gray-100 transition"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <div class="mb-3 text-3xl">💡</div>
+          <h3 class="font-semibold mb-2">Innovation</h3>
+          <p class="text-gray-600 text-sm">
+            Nous intégrons les dernières technologies et méthodes pédagogiques.
+          </p>
+        </div>
+        <!-- Valeur 4 -->
+        <div
+          class="bg-white shadow-md rounded-2xl p-6 text-center hover:shadow-xl hover:bg-gray-100 transition"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          <div class="mb-3 text-3xl">🌍</div>
+          <h3 class="font-semibold mb-2">Respect</h3>
+          <p class="text-gray-600 text-sm">
+            Le respect de chacun de ses besoins et de ses exigences est au cœur
+            de notre engagement quotidien.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Témoignages (Swiper.js) -->
+    <section class="max-w-6xl mx-auto py-16 px-4">
+      <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-down">
+        Ce que disent nos apprenants..
+      </h2>
+      <div class="swiper testimonials-swiper" data-aos="fade-in">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div
+            class="swiper-slide bg-white rounded-xl shadow p-6 text-center flex flex-col items-center"
+          >
+            <p class="italic mb-4">
+              "Grâce à Dream Real-ICT, j'ai eu accès à une formation poussée et
+              de qualité pour trouver un emploi !"
+            </p>
+            <div class="font-semibold">- Marie, Secrétaire bureautique</div>
+          </div>
+          <!-- Slide 2 -->
+          <div
+            class="swiper-slide bg-white rounded-xl shadow p-6 text-center flex flex-col items-center"
+          >
+            <p class="italic mb-4">
+              "Des formateurs à l'écoute et un accompagnement au top. Ils sont
+              des passsionnés et des experts dans leur domaine. "
+            </p>
+            <div class="font-semibold">- Paul, Webmestre</div>
+          </div>
+          <!-- Slide 3 -->
+          <div
+            class="swiper-slide bg-white rounded-xl shadow p-6 text-center flex flex-col items-center"
+          >
+            <p class="italic mb-4">
+              "J'ai pu me reconvertir facilement dans le numérique."
+            </p>
+            <div class="font-semibold">- Amina, Webmestre</div>
+          </div>
+          <!-- Slide 4 -->
+          <div
+            class="swiper-slide bg-white rounded-xl shadow p-6 text-center flex flex-col items-center"
+          >
+            <p class="italic mb-4">
+              "Jusqu'à la, j'ai eu des difficultés à trouver un emploi, mais
+              grâce à Dream Real-ICT, j'ai pu me reconvertir et trouver un
+              emploi."
+            </p>
+            <div class="font-semibold">- Serge, Comptable</div>
+          </div>
+          <!-- Slide 5 -->
+          <div
+            class="swiper-slide bg-white rounded-xl shadow p-6 text-center flex flex-col items-center"
+          >
+            <p class="italic mb-4">
+              "Du début jusqu'à la fin, Dream Real-ICT m'a accompagné et m'a
+              donné les outils nécessaires pour etre pret à l'examen national et
+              à entrer dans le monde du travail."
+            </p>
+            <div class="font-semibold">- Chantal, Graphiste</div>
+          </div>
+          <!-- Slide 6 -->
+          <div
+            class="swiper-slide bg-white rounded-xl shadow p-6 text-center flex flex-col items-center"
+          >
+            <p class="italic mb-4">
+              "j'ai particulierement apprecies le respect de chacun de mes
+              besoins et de ses exigences et leur engagement envers moi."
+            </p>
+            <div class="font-semibold">- Lionel, Graphiste</div>
+          </div>
+          <!-- Slide 7 -->
+          <div
+            class="swiper-slide bg-white rounded-xl shadow p-6 text-center flex flex-col items-center"
+          >
+            <p class="italic mb-4">
+              "J'ai recommandé Dream Real-ICT à tous mes amis et je suis
+              convaincu qu'ils seront satisfaits de leur formation,
+              contrairement à de nombreux centres de formation, ils ne mentent
+              pas et sont sérieux."
+            </p>
+            <div class="font-semibold">- Fatou, Stagiaire</div>
+          </div>
+          <!-- Slide 8 -->
+          <div
+            class="swiper-slide bg-white rounded-xl shadow p-6 text-center flex flex-col items-center"
+          >
+            <p class="italic mb-4">
+              "Ce qui m'a touché c'est qu'ils se battent pour une insertion
+              professionelle, un réseau professionnel qui ouvre des portes."
+            </p>
+            <div class="font-semibold">- Kevin, Diplômé</div>
+          </div>
+        </div>
+        <!-- Pagination & navigation -->
+        <div class="swiper-pagination mt-4"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!-- Section FAQ -->
+    <section class="max-w-4xl mx-auto py-16 px-4">
+      <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-down">
+        Foire Aux Questions (FAQ)
+      </h2>
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="bg-white rounded-lg shadow p-4" data-aos="fade-up">
+          <button
+            class="w-full text-left font-semibold flex justify-between items-center faq-toggle"
+          >
+            <span>Quels sont les prérequis pour s'inscrire ?</span>
+            <span class="text-xl">+</span>
+          </button>
+          <div class="faq-content hidden mt-2 text-gray-600">
+            Aucun prérequis n'est nécessaire pour la plupart de nos formations.
+            La motivation et l'engagement sont essentiels !
+          </div>
+        </div>
+        <!-- FAQ 2 -->
+        <div
+          class="bg-white rounded-lg shadow p-4"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <button
+            class="w-full text-left font-semibold flex justify-between items-center faq-toggle"
+          >
+            <span>Les diplômes sont-ils reconnus ?</span>
+            <span class="text-xl">+</span>
+          </button>
+          <div class="faq-content hidden mt-2 text-gray-600">
+            Oui, nos diplômes et attestations sont reconnus par l'État
+            camerounais.
+          </div>
+        </div>
+        <!-- FAQ 3 -->
+        <div
+          class="bg-white rounded-lg shadow p-4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <button
+            class="w-full text-left font-semibold flex justify-between items-center faq-toggle"
+          >
+            <span>Peut-on suivre les formations à distance ?</span>
+            <span class="text-xl">+</span>
+          </button>
+          <div class="faq-content hidden mt-2 text-gray-600">
+            Certaines formations sont disponibles en présentiel et à distance.
+            Contactez-nous pour plus d'informations.
+          </div>
+        </div>
+        <!-- FAQ 4 -->
+        <div
+          class="bg-white rounded-lg shadow p-4"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <button
+            class="w-full text-left font-semibold flex justify-between items-center faq-toggle"
+          >
+            <span>Comment financer ma formation ?</span>
+            <span class="text-xl">+</span>
+          </button>
+          <div class="faq-content hidden mt-2 text-gray-600">
+            Nous proposons des facilités de paiement et des solutions adaptées à
+            chaque situation.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js" defer></script>
+
+    <!-- Footer -->
+    <footer class="bg-[#1b6086] text-white py-12 mt-16" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
+        <!-- Logo et texte -->
+        <div>
+          <div class="font-bold text-2xl mb-2">CFPC Dream Real-ICT</div>
+          <div>Réalisez vos rêves avec nous</div>
+        </div>
+        <!-- Liens rapides -->
+        <div>
+          <div class="font-semibold mb-2">Liens rapides</div>
+          <ul class="space-y-1">
+            <li><a href="index.html" class="hover:underline">Accueil</a></li>
+            <li>
+              <a href="a-propos.html" class="hover:underline">À propos</a>
+            </li>
+            <li>
+              <a href="formations.html" class="hover:underline">Formations</a>
+            </li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Types de formations -->
+        <div>
+          <div class="font-semibold mb-2">Types de formations</div>
+          <ul class="space-y-1">
+            <li>
+              <a href="/formations.html#diplomantes" class="hover:underline"
+                >Diplômantes</a
+              >
+            </li>
+            <li>
+              <a href="/formations.html#continues" class="hover:underline"
+                >Continues</a
+              >
+            </li>
+            <li>
+              <a href="/formations.html#qualifiantes" class="hover:underline"
+                >Qualifiantes</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Contact et réseaux sociaux -->
+        <div>
+          <div class="font-semibold mb-2">Nous contacter</div>
+          <div class="flex items-center gap-2 mb-1">
+            <span>📞</span> <span>(+237) 699 00 05 63</span>
+          </div>
+          <div class="flex items-center gap-2 mb-1">
+            <span>📞</span> <span>(+237) 6 77 71 07 07</span>
+          </div>
+          <div class="flex gap-3 mt-2">
+            <a
+              href="https://web.facebook.com/cfpcdreamreal/?_rdc=1&_rdr"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f text-lg"></i>
+            </a>
+            <a
+              href="https://wa.me/237677710707"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="WhatsApp"
+            >
+              <i class="fab fa-whatsapp text-lg"></i>
+            </a>
+            <a
+              href="mailto:cfpcdreamreal@gmail.com"
+              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="Gmail"
+            >
+              <i class="far fa-envelope text-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-xs text-white mt-8 opacity-80">
+        © Copyright 2025 CFPC Dream Real-ICT designed by Dream Real-ICT
+      </div>
+    </footer>
+  </body>
+</html>

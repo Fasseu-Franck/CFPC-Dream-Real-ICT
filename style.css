@@ -1,0 +1,15 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --color-primary: #1b6086;
+  --color-accent: #56b94c;
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+@media (min-width: 768px) {
+  header[style] {
+    height: 472px !important;
+  }
+}

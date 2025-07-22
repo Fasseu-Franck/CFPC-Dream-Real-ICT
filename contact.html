@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | CFPC Dream Real-ICT</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="Image/Logo Rond.png" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header (Top Bar + Navigation) -->
+    <!-- Top Bar -->
+    <div class="bg-[#1b6086] text-white text-sm py-2 shadow-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div
+            class="flex flex-wrap items-center justify-center md:justify-start gap-x-6 gap-y-2 mb-2 md:mb-0"
+          >
+            <div class="flex items-center group">
+              <i
+                class="fas fa-map-marker-alt mr-2 text-[#56b94c] transform transition-transform group-hover:scale-110"
+              ></i>
+              <span
+                class="group-hover:text-[#56b94c] transition-colors duration-300"
+                >Yaoundé, Alpha Manguier</span
+              >
+            </div>
+            <div class="hidden md:flex items-center group">
+              <span class="transition-colors duration-300"
+                >(Rez de chaussée Hôtel Lieugne)</span
+              >
+            </div>
+            <div class="flex items-center group">
+              <i
+                class="fab fa-whatsapp mr-2 text-[#56b94c] transform transition-transform group-hover:scale-110"
+              ></i>
+              <a
+                href="https://wa.me/237699000563"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-[#56b94c] transition-colors duration-300"
+                >+237 699 00 05 63</a
+              >
+            </div>
+          </div>
+          <div class="flex space-x-4">
+            <a
+              href="https://web.facebook.com/cfpcdreamreal/?_rdc=1&_rdr"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f text-lg"></i>
+            </a>
+            <a
+              href="https://wa.me/237677710707"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="WhatsApp"
+            >
+              <i class="fab fa-whatsapp text-lg"></i>
+            </a>
+            <a
+              href="mailto:cfpcdreamreal@gmail.com"
+              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="Gmail"
+            >
+              <i class="far fa-envelope text-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav
+      class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300"
+      id="mainNav"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo -->
+          <a
+            href="index.html"
+            class="flex items-center group"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <img
+              src="Image/Logo Rond.png"
+              alt="CFPC Dream Real-ICT Logo"
+              class="h-12 w-auto transform transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+            <span class="ml-3 text-xl font-bold text-[#1b6086] hidden sm:inline"
+              >CFPC Dream Real-ICT</span
+            >
+          </a>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center space-x-1">
+            <a
+              href="index.html"
+              class="relative px-4 py-2 text-[#1b6086] font-medium group"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
+              <span class="relative z-10">Accueil</span>
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-[#56b94c] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+              ></span>
+            </a>
+
+            <a
+              href="a-propos.html"
+              class="relative px-4 py-2 text-gray-600 hover:text-[#1b6086] font-medium group"
+              data-aos="fade-down"
+              data-aos-delay="150"
+            >
+              <span class="relative z-10">À propos</span>
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-[#56b94c] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+              ></span>
+            </a>
+
+            <a
+              href="formations.html"
+              class="relative px-4 py-2 text-gray-600 hover:text-[#1b6086] font-medium group"
+            >
+              <span class="relative z-10">Formations</span>
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-[#56b94c] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+              ></span>
+            </a>
+
+            <a
+              href="contact.html"
+              class="relative px-4 py-2 text-gray-600 hover:text-[#1b6086] font-medium group"
+              data-aos="fade-down"
+              data-aos-delay="250"
+            >
+              <span class="relative z-10">Contact</span>
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-[#56b94c] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+              ></span>
+            </a>
+
+            <a
+              href="inscription.html"
+              class="ml-4 bg-gradient-to-r from-[#56b94c] to-[#3da734] text-white px-6 py-2.5 rounded-full font-medium hover:opacity-90 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <i class="fas fa-user-plus mr-2"></i>
+              S'inscrire à une formation
+            </a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-gray-700 hover:text-[#1b6086] focus:outline-none p-2 rounded-full hover:bg-gray-100 transition-colors duration-200"
+              aria-label="Menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                class="h-6 w-6 transform transition-transform duration-200"
+                id="menu-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white shadow-xl transform origin-top transition-all duration-300 ease-in-out"
+      >
+        <div class="px-2 pt-2 pb-4 space-y-1">
+          <a
+            href="index.html"
+            class="flex px-4 py-3 text-[#1b6086] font-medium bg-gray-50 rounded-lg items-center"
+          >
+            <i class="fas fa-home w-5 mr-2 text-[#56b94c]"></i>
+            Accueil
+          </a>
+          <a
+            href="a-propos.html"
+            class="flex px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#1b6086] rounded-lg transition-colors duration-200 items-center"
+          >
+            <i class="fas fa-info-circle w-5 mr-2 text-[#56b94c]"></i>
+            À propos
+          </a>
+
+          <a
+            href="formations.html"
+            class="flex px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#1b6086] rounded-lg transition-colors duration-200 items-center"
+          >
+            <i class="fas fa-graduation-cap w-5 mr-2 text-[#56b94c]"></i>
+            Formations
+          </a>
+
+          <a
+            href="contact.html"
+            class="flex px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#1b6086] rounded-lg transition-colors duration-200 items-center"
+          >
+            <i class="fas fa-envelope w-5 mr-2 text-[#56b94c]"></i>
+            Contact
+          </a>
+
+          <a
+            href="inscription.html"
+            class="block mx-2 mt-2 text-center bg-gradient-to-r from-[#56b94c] to-[#3da734] text-white px-4 py-2.5 rounded-lg font-medium hover:opacity-90 transition-opacity duration-200"
+          >
+            <i class="fas fa-user-plus mr-2"></i>
+            S'inscrire à une formation
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      // Initialize when DOM is fully loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mobile menu elements
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menuIcon = document.getElementById("menu-icon");
+        const mobileFormationsButton = document.getElementById(
+          "mobile-formations-button"
+        );
+        const mobileFormationsMenu = document.getElementById(
+          "mobile-formations-menu"
+        );
+        const mobileArrow = document.getElementById("mobile-arrow");
+        let isMenuOpen = false;
+        let isSubmenuOpen = false;
+
+        // Toggle main mobile menu
+        function toggleMobileMenu() {
+          isMenuOpen = !isMenuOpen;
+          mobileMenu.classList.toggle("hidden", !isMenuOpen);
+          mobileMenu.style.maxHeight = isMenuOpen
+            ? mobileMenu.scrollHeight + "px"
+            : "0";
+
+          // Toggle menu icon between bars and times
+          if (isMenuOpen) {
+            // Change to X icon
+            menuIcon.setAttribute("d", "M6 18L18 6M6 6l12 12");
+            menuIcon.setAttribute("stroke-linecap", "round");
+            menuIcon.setAttribute("stroke-linejoin", "round");
+            mobileMenuButton.setAttribute("aria-expanded", "true");
+            document.body.style.overflow = "hidden"; // Prevent scrolling when menu is open
+          } else {
+            // Change to hamburger icon
+            menuIcon.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
+            menuIcon.setAttribute("stroke-linecap", "round");
+            menuIcon.setAttribute("stroke-linejoin", "round");
+            mobileMenuButton.setAttribute("aria-expanded", "false");
+            document.body.style.overflow = ""; // Re-enable scrolling
+
+            // Close submenu when closing main menu
+            if (isSubmenuOpen) {
+              toggleFormationsMenu();
+            }
+          }
+        }
+
+        // Toggle formations submenu
+        function toggleFormationsMenu() {
+          isSubmenuOpen = !isSubmenuOpen;
+          mobileFormationsMenu.classList.toggle("hidden", !isSubmenuOpen);
+          mobileFormationsMenu.style.maxHeight = isSubmenuOpen
+            ? mobileFormationsMenu.scrollHeight + "px"
+            : "0";
+          mobileArrow.style.transform = isSubmenuOpen
+            ? "rotate(180deg)"
+            : "rotate(0)";
+          mobileFormationsButton.setAttribute(
+            "aria-expanded",
+            isSubmenuOpen ? "true" : "false"
+          );
+        }
+
+        // Event listeners
+        if (mobileMenuButton) {
+          mobileMenuButton.addEventListener("click", function (e) {
+            e.stopPropagation();
+            toggleMobileMenu();
+          });
+        }
+
+        if (mobileFormationsButton) {
+          mobileFormationsButton.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleFormationsMenu();
+          });
+        }
+
+        // Close mobile menu when clicking on a link
+        if (mobileMenu) {
+          const mobileLinks = mobileMenu.querySelectorAll("a[href]");
+          mobileLinks.forEach((link) => {
+            link.addEventListener("click", function (e) {
+              if (this.getAttribute("href") !== "#") {
+                toggleMobileMenu();
+              }
+            });
+          });
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener("click", function (e) {
+          if (
+            isMenuOpen &&
+            mobileMenu &&
+            !mobileMenu.contains(e.target) &&
+            mobileMenuButton &&
+            !mobileMenuButton.contains(e.target)
+          ) {
+            toggleMobileMenu();
+          }
+        });
+
+        // Handle window resize
+        window.addEventListener("resize", function () {
+          if (window.innerWidth >= 768) {
+            // Reset mobile menu state on desktop
+            if (mobileMenu) {
+              mobileMenu.classList.add("hidden");
+              mobileMenu.style.maxHeight = "";
+            }
+            if (menuIcon) {
+              menuIcon.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
+            }
+            isMenuOpen = false;
+            isSubmenuOpen = false;
+            document.body.style.overflow = "";
+          }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            const targetId = this.getAttribute("href");
+            if (targetId === "#" || targetId === "#!") return;
+
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              e.preventDefault();
+              window.scrollTo({
+                top: targetElement.offsetTop - 100, // Offset for fixed header
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+
+        // Add shadow to navbar on scroll
+        function handleNavbarScroll() {
+          const navbar = document.getElementById("mainNav");
+          if (navbar) {
+            if (window.scrollY > 10) {
+              navbar.classList.add("shadow-lg");
+              navbar.classList.add("bg-white/95");
+              navbar.classList.add("backdrop-blur-sm");
+            } else {
+              navbar.classList.remove("shadow-lg");
+              navbar.classList.remove("bg-white/95");
+              navbar.classList.remove("backdrop-blur-sm");
+            }
+          }
+        }
+
+        // Initialize scroll event
+        window.addEventListener("scroll", handleNavbarScroll);
+        handleNavbarScroll(); // Run once on load
+
+        // Initialize AOS (Animate On Scroll)
+        if (typeof AOS !== "undefined") {
+          AOS.init({
+            duration: 800,
+            easing: "ease-in-out",
+            once: true,
+            mirror: false,
+          });
+        }
+      });
+    </script>
+
+    <!-- En-tête de page -->
+    <section class="max-w-3xl mx-auto text-center py-16" data-aos="fade-down">
+      <h1 class="text-4xl font-bold mb-4">Contactez-nous</h1>
+      <p class="text-lg text-gray-700">
+        Nous sommes à votre écoute pour toute question ou demande d'information.
+      </p>
+    </section>
+
+    <!-- Corps de la page (Deux colonnes) -->
+    <div
+      class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 pb-16 px-4"
+    >
+      <!-- Colonne de gauche : Infos pratiques -->
+      <div class="flex flex-col gap-6">
+        <div
+          class="bg-white rounded-xl shadow p-6 flex items-center gap-4"
+          data-aos="fade-right"
+        >
+          <span class="text-3xl">📍</span>
+          <div>
+            <div class="font-semibold">Adresse</div>
+            <div class="text-gray-600 text-sm">Yaoundé, Alpha Manguier</div>
+            <div class="text-gray-600 text-sm">
+              Rez de chaussée, Hôtel Lieugne
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow p-6 flex items-center gap-4 my-2"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <span class="text-3xl">📞</span>
+          <div>
+            <div class="font-semibold">Téléphone</div>
+            <div class="text-gray-600 text-sm">(+237) 699 00 05 63</div>
+            <div class="text-gray-600 text-sm">(+237) 677 71 07 07</div>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow p-6 flex items-center gap-4"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          <span class="text-3xl">⏰</span>
+          <div>
+            <div class="font-semibold">Horaires d'ouverture</div>
+            <div class="text-gray-600 text-sm">
+              Lundi - Vendredi : 8h00 - 18h00
+            </div>
+            <div class="text-gray-600 text-sm">Samedi : 9h00 - 13h00</div>
+          </div>
+        </div>
+        <!-- Google Maps -->
+        <div
+          class="overflow-hidden rounded-xl shadow"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.622443063408!2d11.5331473!3d3.9059147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bc5001e63a06d%3A0x4b5c2f57a2af153b!2sHOTEL%20LIEUGNE!5e1!3m2!1sfr!2scm!4v1750974208596!5m2!1sfr!2scm"
+            width="100%"
+            height="250"
+            style="border: 0; min-width: 200px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <!-- Colonne de droite : Formulaire de contact -->
+      <form
+        class="bg-white rounded-xl shadow p-8 flex flex-col gap-4"
+        data-aos="fade-left"
+        action="https://formspree.io/f/mqabjdba"
+        method="POST"
+      >
+        <div
+          class="flex flex-col md:flex-row gap-4"
+          data-aos="fade-left"
+          data-aos-delay="250"
+        >
+          <div class="flex-1">
+            <label class="block text-sm font-medium mb-1" for="Nom"
+              >Nom *</label
+            >
+            <input
+              type="text"
+              name="Nom"
+              id="Nom"
+              class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1b6086]"
+              required
+            />
+          </div>
+          <div class="flex-1">
+            <label class="block text-sm font-medium mb-1" for="Prénom"
+              >Prénom *</label
+            >
+            <input
+              type="text"
+              name="Prénom"
+              id="Prénom"
+              class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1b6086]"
+              required
+            />
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="300">
+          <label class="block text-sm font-medium mb-1" for="Email"
+            >Email *</label
+          >
+          <input
+            type="email"
+            name="Email"
+            id="Email"
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1b6086]"
+            required
+          />
+        </div>
+        <div data-aos="fade-left" data-aos-delay="300">
+          <label class="block text-sm font-medium mb-1" for="Téléphone"
+            >Téléphone *</label
+          >
+          <input
+            type="tel"
+            name="Téléphone"
+            id="Téléphone"
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1b6086]"
+          />
+        </div>
+        <div data-aos="fade-left" data-aos-delay="350">
+          <label class="block text-sm font-medium mb-1" for="Sujet"
+            >Sujet *</label
+          >
+          <select
+            name="Sujet"
+            placeholder="Sélectionnez un sujet"
+            id="Sujet"
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1b6086]"
+          >
+            <option>Choisir un sujet</option>
+            <option>Demande d'information</option>
+            <option>Inscription</option>
+            <option>Prise de rendez-vous</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="400">
+          <label class="block text-sm font-medium mb-1" for="Message"
+            >Message (facultatif)</label
+          >
+          <textarea
+            name="Message"
+            placeholder="Veuillez entrer votre message ici"
+            id="Message"
+            class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1b6086]"
+            rows="3"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="mt-4 px-6 py-3 bg-[#56b94c] text-white font-semibold rounded-lg shadow hover:bg-[#449c3a] transition self-center"
+          data-aos="fade-left"
+          data-aos-delay="450"
+        >
+          Envoyer le message
+        </button>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#1b6086] text-white py-12 mt-16" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
+        <!-- Logo et texte -->
+        <div>
+          <div class="font-bold text-2xl mb-2">CFPC Dream Real-ICT</div>
+          <div>Réalisez vos rêves avec nous</div>
+        </div>
+        <!-- Liens rapides -->
+        <div>
+          <div class="font-semibold mb-2">Liens rapides</div>
+          <ul class="space-y-1">
+            <li><a href="index.html" class="hover:underline">Accueil</a></li>
+            <li>
+              <a href="a-propos.html" class="hover:underline">À propos</a>
+            </li>
+            <li>
+              <a href="formations.html" class="hover:underline">Formations</a>
+            </li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Types de formations -->
+        <div>
+          <div class="font-semibold mb-2">Types de formations</div>
+          <ul class="space-y-1">
+            <li>
+              <a href="/formations.html#diplomantes" class="hover:underline"
+                >Diplômantes</a
+              >
+            </li>
+            <li>
+              <a href="/formations.html#continues" class="hover:underline"
+                >Continues</a
+              >
+            </li>
+            <li>
+              <a href="/formations.html#qualifiantes" class="hover:underline"
+                >Qualifiantes</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Contact et réseaux sociaux -->
+        <div>
+          <div class="font-semibold mb-2">Nous contacter</div>
+          <div class="flex items-center gap-2 mb-1">
+            <span>📞</span> <span>(+237) 699 00 05 63</span>
+          </div>
+          <div><span>📞</span> <span>(+237) 6 77 71 07 07</span></div>
+          <div class="flex gap-3 mt-2">
+            <a
+              href="https://web.facebook.com/cfpcdreamreal/?_rdc=1&_rdr"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f text-lg"></i>
+            </a>
+            <a
+              href="https://wa.me/237677710707"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="WhatsApp"
+            >
+              <i class="fab fa-whatsapp text-lg"></i>
+            </a>
+            <a
+              href="mailto:cfpcdreamreal@gmail.com"
+              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
+              aria-label="Gmail"
+            >
+              <i class="far fa-envelope text-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-xs text-white mt-8 opacity-80">
+        © Copyright 2025 CFPC Dream Real-ICT designed by Dream Real-ICT
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
