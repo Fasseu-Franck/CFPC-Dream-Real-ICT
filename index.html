@@ -127,7 +127,7 @@
               class="h-12 w-auto transform transition-transform duration-300 group-hover:scale-105"
               loading="lazy"
             />
-            <span class="ml-3 text-xl font-bold text-[#1b6086] hidden sm:inline"
+            <span class="ml-3 text-lg sm:text-xl font-bold text-[#1b6086]"
               >CFPC Dream Real-ICT</span
             >
           </a>
@@ -296,7 +296,7 @@
           >
           <a
             href="C:\Users\FASSEU\OneDrive\Desktop\Dream Real-ICT\a-propos.html"
-            class="px-6 py-3 bg-white text-[#1b6086] font-semibold rounded-lg shadow hover:bg-[#56b94c] hover:text-white transition w-auto max-w-xs mx-auto border border-[#1b6086]"
+            class="px-6 py-3 bg-white text-[#1b6086] font-semibold rounded-lg shadow hover:bg-[#1b6086] hover:text-white transition w-auto max-w-xs mx-auto border border-[#1b6086]"
             >À propos de nous</a
           >
         </div>
@@ -457,12 +457,13 @@
     </section>
 
     <!-- Section Nos Chiffres Clés -->
-    <section class="max-w-6xl mx-auto py-16 px-4">
+    <section class="mx-auto py-16 px-4 w-full bg-transparent">
       <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-down">
         Une expérience acquise..
       </h2>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-center items-center"
+      >
         <div
           class="bg-white rounded-xl shadow p-6 text-center"
           data-aos="zoom-in"
@@ -522,49 +523,83 @@
       <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-down">
         De sérieux atouts..
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-        <div
-          class="bg-white rounded-2xl shadow p-6 text-center"
-          data-aos="fade-up"
-        >
+      
+      <!-- Version Desktop: une ligne avec fond dégradé -->
+      <div class="hidden md:flex bg-gradient-to-r from-[#1b6086] to-[#56b94c] rounded-xl shadow-lg p-8 text-white mb-8">
+        <div class="flex-1 text-center px-4" data-aos="fade-up">
           <div class="text-4xl mb-3">🕒</div>
           <h3 class="font-semibold mb-2">Flexibilité</h3>
-          <p class="text-gray-600">
+          <p>
             Des horaires adaptés à votre rythme de vie.
           </p>
         </div>
-        <div
-          class="bg-white rounded-2xl shadow p-6 text-center"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+        <div class="flex-1 text-center px-4" data-aos="fade-up" data-aos-delay="100">
           <div class="text-4xl mb-3">🤝</div>
           <h3 class="font-semibold mb-2">Accompagnement</h3>
-          <p class="text-gray-600">
+          <p>
             Un suivi personnalisé tout au long de votre parcours.
           </p>
         </div>
-        <div
-          class="bg-white rounded-2xl shadow p-6 text-center"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
+        <div class="flex-1 text-center px-4" data-aos="fade-up" data-aos-delay="200">
           <div class="text-4xl mb-3">💻</div>
           <h3 class="font-semibold mb-2">Matériel de pointe</h3>
-          <p class="text-gray-600">
+          <p>
             Des équipements modernes pour un apprentissage optimal.
           </p>
         </div>
-        <div
-          class="bg-white rounded-2xl shadow p-6 text-center"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
+        <div class="flex-1 text-center px-4" data-aos="fade-up" data-aos-delay="300">
           <div class="text-4xl mb-3">🌐</div>
           <h3 class="font-semibold mb-2">Réseau professionnel</h3>
-          <p class="text-gray-600">
+          <p>
             Des opportunités grâce à notre réseau d'entreprises partenaires.
           </p>
+        </div>
+      </div>
+      
+      <!-- Version Mobile: cartes avec mise en page irrégulière -->
+      <div class="md:hidden grid grid-cols-1 gap-6">
+        <!-- Première ligne avec décalage à droite -->
+        <div class="ml-4">
+          <div class="bg-white rounded-2xl shadow-lg p-6 text-center transform hover:scale-105 transition-transform" data-aos="fade-right">
+            <div class="text-4xl mb-3 text-[#1b6086]">🕒</div>
+            <h3 class="font-semibold mb-2 text-[#1b6086]">Flexibilité</h3>
+            <p class="text-gray-600">
+              Des horaires adaptés à votre rythme de vie.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Deuxième ligne avec décalage à gauche -->
+        <div class="mr-4">
+          <div class="bg-white rounded-2xl shadow-lg p-6 text-center transform hover:scale-105 transition-transform" data-aos="fade-left">
+            <div class="text-4xl mb-3 text-[#56b94c]">🤝</div>
+            <h3 class="font-semibold mb-2 text-[#56b94c]">Accompagnement</h3>
+            <p class="text-gray-600">
+              Un suivi personnalisé tout au long de votre parcours.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Troisième ligne avec décalage à droite -->
+        <div class="ml-8">
+          <div class="bg-white rounded-2xl shadow-lg p-6 text-center transform hover:scale-105 transition-transform" data-aos="fade-right">
+            <div class="text-4xl mb-3 text-[#1b6086]">💻</div>
+            <h3 class="font-semibold mb-2 text-[#1b6086]">Matériel de pointe</h3>
+            <p class="text-gray-600">
+              Des équipements modernes pour un apprentissage optimal.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Quatrième ligne avec décalage à gauche -->
+        <div class="mr-8">
+          <div class="bg-white rounded-2xl shadow-lg p-6 text-center transform hover:scale-105 transition-transform" data-aos="fade-left">
+            <div class="text-4xl mb-3 text-[#56b94c]">🌐</div>
+            <h3 class="font-semibold mb-2 text-[#56b94c]">Réseau professionnel</h3>
+            <p class="text-gray-600">
+              Des opportunités grâce à notre réseau d'entreprises partenaires.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -802,87 +837,121 @@
 
     <!-- Footer -->
     <footer class="bg-[#1b6086] text-white py-12 mt-16" data-aos="fade-up">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
-        <!-- Logo et texte -->
-        <div class="flex flex-col items-start">
-          <div class="font-bold text-2xl mb-2">CFPC Dream Real-ICT</div>
-          <div>Réalisez vos rêves avec nous</div>
-        </div>
-        <!-- Liens rapides -->
-        <div>
-          <div class="font-semibold mb-2">Liens rapides</div>
-          <ul class="space-y-1">
-            <li><a href="index.html" class="hover:underline">Accueil</a></li>
-            <li>
-              <a href="a-propos.html" class="hover:underline">À propos</a>
-            </li>
-            <li>
-              <a href="formations.html" class="hover:underline">Formations</a>
-            </li>
-            <li><a href="contact.html" class="hover:underline">Contact</a></li>
-          </ul>
-        </div>
-        <!-- Types de formations -->
-        <div>
-          <div class="font-semibold mb-2">Types de formations</div>
-          <ul class="space-y-1">
-            <li>
-              <a href="/formations.html#diplomantes" class="hover:underline"
-                >Diplômantes</a
-              >
-            </li>
-            <li>
-              <a href="/formations.html#continues" class="hover:underline"
-                >Continues</a
-              >
-            </li>
-            <li>
-              <a href="/formations.html#qualifiantes" class="hover:underline"
-                >Qualifiantes</a
-              >
-            </li>
-          </ul>
-        </div>
-        <!-- Contact et réseaux sociaux -->
-        <div>
-          <div class="font-semibold mb-2">Nous contacter</div>
-          <div class="flex items-center gap-2 mb-1">
-            <span>📞</span> <span>(+237) 699 00 05 63</span>
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Section principale du footer -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <!-- Informations de l'entreprise -->
+          <div class="flex flex-col items-start">
+            <div class="flex items-center mb-4">
+              <img
+                src="Image/Logo Rond.png"
+                alt="CFPC Dream Real-ICT Logo"
+                class="h-12 w-12 mr-3"
+              />
+              <div>
+                <div class="font-bold text-2xl">CFPC Dream Real-ICT</div>
+                <div class="text-sm opacity-90">
+                  Centre de Formation Professionnelle
+                </div>
+              </div>
+            </div>
+            <p class="text-sm opacity-90 leading-relaxed">
+              Des formations numériques de qualité, accessibles et
+              professionnelles pour booster votre carrière.
+            </p>
           </div>
-          <div class="flex items-center gap-2 mb-1">
-            <span>📞</span> <span>(+237) 6 77 71 07 07</span>
+
+          <!-- Liens rapides -->
+          <div>
+            <div class="font-semibold text-lg mb-4">Liens Rapides</div>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="index.html"
+                  class="hover:text-[#56b94c] transition-colors duration-300"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="a-propos.html"
+                  class="hover:text-[#56b94c] transition-colors duration-300"
+                  >À Propos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="formations.html"
+                  class="hover:text-[#56b94c] transition-colors duration-300"
+                  >Nos Formations</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="hover:text-[#56b94c] transition-colors duration-300"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="inscription.html"
+                  class="hover:text-[#56b94c] transition-colors duration-300"
+                  >S'inscrire</a
+                >
+              </li>
+            </ul>
           </div>
-          <div class="flex gap-3 mt-2">
-            <a
-              href="https://web.facebook.com/cfpcdreamreal/?_rdc=1&_rdr"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
-              aria-label="Facebook"
-            >
-              <i class="fab fa-facebook-f text-lg"></i>
-            </a>
-            <a
-              href="https://wa.me/237677710707"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
-              aria-label="WhatsApp"
-            >
-              <i class="fab fa-whatsapp text-lg"></i>
-            </a>
-            <a
-              href="mailto:cfpcdreamreal@gmail.com"
-              class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 transform hover:-translate-y-0.5"
-              aria-label="Gmail"
-            >
-              <i class="far fa-envelope text-lg"></i>
-            </a>
+
+          <!-- Contacts -->
+          <div>
+            <div class="font-semibold text-lg mb-4">Contacts</div>
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <i class="far fa-envelope w-5 mr-3 text-[#56b94c]"></i>
+                <span class="text-sm">cfpcdreamreal@gmail.com</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fab fa-whatsapp w-5 mr-3 text-[#56b94c]"></i>
+                <span class="text-sm">+237 699 00 05 63</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fab fa-whatsapp w-5 mr-3 text-[#56b94c]"></i>
+                <span class="text-sm">+237 6 77 71 07 07</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fab fa-facebook w-5 mr-3 text-[#56b94c]"></i>
+                <span class="text-sm">/cfpcdreamreal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Horaires -->
+          <div>
+            <div class="font-semibold text-lg mb-4">Horaires</div>
+            <div class="space-y-3">
+              <div>
+                <div class="text-sm opacity-90">Lundi - Vendredi</div>
+                <div class="font-semibold">8h - 17h30</div>
+              </div>
+              <div>
+                <div class="text-sm opacity-90">Samedi</div>
+                <div class="font-semibold">8h - 13h</div>
+              </div>
+              <div>
+                <div class="text-sm opacity-90">Dimanche</div>
+                <div class="font-semibold">Fermé</div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="text-center text-xs text-white mt-8 opacity-80">
-        © Copyright 2025 CFPC Dream Real-ICT designed by Dream Real-ICT
+
+        <!-- Ligne de séparation -->
+        <div class="border-t border-white/20 pt-6">
+          <div class="text-center text-sm opacity-80">
+            © 2025 CFPC Dream Real-ICT. Tous droits réservés.
+          </div>
+        </div>
       </div>
     </footer>
   </body>

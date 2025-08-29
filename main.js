@@ -12,10 +12,13 @@ tabBtns.forEach((btn) => {
     btn.classList.add("text-[#1b6086]", "border-[#1b6086]");
     btn.classList.remove("text-gray-600", "border-transparent");
     const tab = btn.getAttribute("data-tab");
-    tabContents.forEach((content) => {
-      content.classList.add("hidden");
-    });
-    document.getElementById(tab).classList.remove("hidden");
+    const targetElement = document.getElementById(tab);
+    if (targetElement) {
+      tabContents.forEach((content) => {
+        content.classList.add("hidden");
+      });
+      targetElement.classList.remove("hidden");
+    }
   });
 });
 
@@ -37,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Toggle main mobile menu
   function toggleMobileMenu() {
+    isMenuOpen = !isMenuOpen;
     mobileMenu.classList.toggle("hidden", !isMenuOpen);
     mobileMenu.style.maxHeight = isMenuOpen
       ? mobileMenu.scrollHeight + "px"
@@ -45,17 +49,25 @@ document.addEventListener("DOMContentLoaded", function () {
     // Toggle menu icon between bars and times
     if (isMenuOpen) {
       // Change to X icon
-      menuIcon.setAttribute("d", "M6 18L18 6M6 6l12 12");
-      menuIcon.setAttribute("stroke-linecap", "round");
-      menuIcon.setAttribute("stroke-linejoin", "round");
-      mobileMenuButton.setAttribute("aria-expanded", "true");
+      if (menuIcon) {
+        menuIcon.setAttribute("d", "M6 18L18 6M6 6l12 12");
+        menuIcon.setAttribute("stroke-linecap", "round");
+        menuIcon.setAttribute("stroke-linejoin", "round");
+      }
+      if (mobileMenuButton) {
+        mobileMenuButton.setAttribute("aria-expanded", "true");
+      }
       document.body.style.overflow = "hidden"; // Prevent scrolling when menu is open
     } else {
       // Change to hamburger icon
-      menuIcon.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
-      menuIcon.setAttribute("stroke-linecap", "round");
-      menuIcon.setAttribute("stroke-linejoin", "round");
-      mobileMenuButton.setAttribute("aria-expanded", "false");
+      if (menuIcon) {
+        menuIcon.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
+        menuIcon.setAttribute("stroke-linecap", "round");
+        menuIcon.setAttribute("stroke-linejoin", "round");
+      }
+      if (mobileMenuButton) {
+        mobileMenuButton.setAttribute("aria-expanded", "false");
+      }
       document.body.style.overflow = ""; // Re-enable scrolling
 
       // Close submenu when closing main menu
@@ -68,17 +80,23 @@ document.addEventListener("DOMContentLoaded", function () {
   // Toggle formations submenu
   function toggleFormationsMenu() {
     isSubmenuOpen = !isSubmenuOpen;
-    mobileFormationsMenu.classList.toggle("hidden", !isSubmenuOpen);
-    mobileFormationsMenu.style.maxHeight = isSubmenuOpen
-      ? mobileFormationsMenu.scrollHeight + "px"
-      : "0";
-    mobileArrow.style.transform = isSubmenuOpen
-      ? "rotate(180deg)"
-      : "rotate(0)";
-    mobileFormationsButton.setAttribute(
-      "aria-expanded",
-      isSubmenuOpen ? "true" : "false"
-    );
+    if (mobileFormationsMenu) {
+      mobileFormationsMenu.classList.toggle("hidden", !isSubmenuOpen);
+      mobileFormationsMenu.style.maxHeight = isSubmenuOpen
+        ? mobileFormationsMenu.scrollHeight + "px"
+        : "0";
+    }
+    if (mobileArrow) {
+      mobileArrow.style.transform = isSubmenuOpen
+        ? "rotate(180deg)"
+        : "rotate(0)";
+    }
+    if (mobileFormationsButton) {
+      mobileFormationsButton.setAttribute(
+        "aria-expanded",
+        isSubmenuOpen ? "true" : "false"
+      );
+    }
   }
 
   // Event listeners
@@ -201,7 +219,6 @@ document.addEventListener("DOMContentLoaded", function () {
         "Marketing digital et gestion des réseaux sociaux (Meta, WhatsApp Business)",
         "Bureautique avancée : Word, Excel, PowerPoint pro + certification",
         "Langage de programmation spécifique",
-        6,
       ],
       continue: [
         "Suite MS Office",
@@ -240,89 +257,6 @@ document.addEventListener("DOMContentLoaded", function () {
       mirror: false,
     });
   }
-
-  // Gestion du menu mobile (header)
-  if (mobileMenuButton && mobileMenu) {
-    mobileMenuButton.addEventListener("click", function () {
-      isMenuOpen = !isMenuOpen;
-      mobileMenu.classList.toggle("hidden", !isMenuOpen);
-      mobileMenu.style.maxHeight = isMenuOpen
-        ? mobileMenu.scrollHeight + "px"
-        : "0";
-      if (menuIcon) {
-        if (isMenuOpen) {
-          menuIcon.setAttribute("d", "M6 18L18 6M6 6l12 12");
-          menuIcon.setAttribute("stroke-linecap", "round");
-          menuIcon.setAttribute("stroke-linejoin", "round");
-          mobileMenuButton.setAttribute("aria-expanded", "true");
-          document.body.style.overflow = "hidden";
-        } else {
-          menuIcon.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
-          menuIcon.setAttribute("stroke-linecap", "round");
-          menuIcon.setAttribute("stroke-linejoin", "round");
-          mobileMenuButton.setAttribute("aria-expanded", "false");
-          document.body.style.overflow = "";
-        }
-      }
-    });
-
-    // Fermer le menu mobile en cliquant à l'extérieur
-    document.addEventListener("click", function (e) {
-      if (
-        isMenuOpen &&
-        mobileMenu &&
-        !mobileMenu.contains(e.target) &&
-        mobileMenuButton &&
-        !mobileMenuButton.contains(e.target)
-      ) {
-        mobileMenuButton.click();
-      }
-    });
-  }
-
-  // Reset menu mobile sur resize
-  window.addEventListener("resize", function () {
-    if (window.innerWidth >= 768 && mobileMenu) {
-      mobileMenu.classList.add("hidden");
-      mobileMenu.style.maxHeight = "";
-      isMenuOpen = false;
-      document.body.style.overflow = "";
-    }
-  });
-
-  // Smooth scroll pour les ancres
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      const targetId = this.getAttribute("href");
-      if (targetId === "#" || targetId === "#!") return;
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        e.preventDefault();
-        window.scrollTo({
-          top: targetElement.offsetTop - 100,
-          behavior: "smooth",
-        });
-      }
-    });
-  });
-
-  // Shadow sur la navbar au scroll
-  function handleNavbarScroll() {
-    const navbar = document.getElementById("mainNav");
-    if (navbar) {
-      if (window.scrollY > 10) {
-        navbar.classList.add("shadow-lg");
-        navbar.classList.add("bg-white/95");
-        navbar.classList.add("backdrop-blur-sm");
-      } else {
-        navbar.classList.remove("shadow-lg");
-        navbar.classList.remove("bg-white/95");
-        navbar.classList.remove("backdrop-blur-sm");
-      }
-    }
-  }
-  window.addEventListener("scroll", handleNavbarScroll);
-  handleNavbarScroll();
 
   // Accordéon FAQ (pour a-propos.html)
   const faqToggles = document.querySelectorAll(".faq-toggle");
@@ -424,4 +358,208 @@ document.addEventListener("DOMContentLoaded", function () {
   counters.forEach((counter) => {
     observer.observe(counter);
   });
+
+  // Bouton "Retour en haut" pour les pages de formations
+  (function setupBackToTopOnFormationPages() {
+    const formationPages = new Set([
+      "comp_infor_gestion.html",
+      "developpement-application.html",
+      "graphisme-production.html",
+      "marketing-digital.html",
+      "montage-audiovisuel.html",
+      "securite-electronique.html",
+      "secretariat-bureautique.html",
+      "secretariat-comptable.html",
+      "secretariat-direction.html",
+      "webmestre.html",
+      "formations.html",
+    ]);
+
+    const currentPage = (
+      window.location.pathname.split("/").pop() || ""
+    ).toLowerCase();
+    if (!formationPages.has(currentPage)) return;
+
+    const btn = document.createElement("button");
+    btn.id = "backToTop";
+    btn.type = "button";
+    btn.setAttribute("aria-label", "Retour en haut");
+    btn.className = [
+      "fixed",
+      "bottom-6",
+      "right-5",
+      "md:bottom-8",
+      "md:right-8",
+      "z-50",
+      "w-10",
+      "h-10",
+      "rounded-full",
+      "bg-[#56b94c]/10",
+      "text-gray-700",
+      "shadow-md",
+      "ring-1",
+      "ring-black/5",
+      "backdrop-blur-sm",
+      "flex",
+      "items-center",
+      "justify-center",
+      "opacity-0",
+      "translate-y-2",
+      "pointer-events-none",
+      "transition-all",
+      "duration-300",
+      "ease-out",
+      "hover:bg-[#56b94c]/10",
+      "hover:shadow-[#56b94c]/20",
+      "hover:-translate-y-0.5",
+      "active:scale-95",
+      "focus:outline-none",
+      "focus-visible:ring-2",
+      "focus-visible:ring-[#1b6086]/40",
+      "focus-visible:ring-offset-2",
+      "focus-visible:ring-offset-transparent",
+    ].join(" ");
+
+    btn.innerHTML =
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 6.5a1 1 0 01.7.29l5 5a1 1 0 01-1.4 1.42L13 10.33V18a1 1 0 11-2 0v-7.67l-3.3 2.88a1 1 0 11-1.3-1.52l5-4.36A1 1 0 0112 6.5z"/></svg>';
+
+    document.body.appendChild(btn);
+
+    function showBackToTop(show) {
+      if (show) {
+        btn.classList.remove(
+          "opacity-0",
+          "translate-y-2",
+          "pointer-events-none"
+        );
+        btn.classList.add(
+          "opacity-100",
+          "translate-y-0",
+          "pointer-events-auto"
+        );
+      } else {
+        btn.classList.add("opacity-0", "translate-y-2", "pointer-events-none");
+        btn.classList.remove(
+          "opacity-100",
+          "translate-y-0",
+          "pointer-events-auto"
+        );
+      }
+    }
+
+    function handleBackToTopVisibility() {
+      showBackToTop(window.scrollY > 400);
+    }
+
+    btn.addEventListener("click", () => {
+      const prefersReduced =
+        window.matchMedia &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: prefersReduced ? "auto" : "smooth" });
+    });
+
+    window.addEventListener("scroll", handleBackToTopVisibility, {
+      passive: true,
+    });
+    handleBackToTopVisibility();
+  })();
+
+  // Bouton "Retour" (top-left) pour les pages de formations
+  (function setupBackButtonOnFormationPages() {
+    const formationPages = new Set([
+      "comp_infor_gestion.html",
+      "developpement-application.html",
+      "graphisme-production.html",
+      "marketing-digital.html",
+      "montage-audiovisuel.html",
+      "securite-electronique.html",
+      "secretariat-bureautique.html",
+      "secretariat-comptable.html",
+      "secretariat-direction.html",
+      "webmestre.html",
+      "formations.html",
+    ]);
+
+    const currentPage = (
+      window.location.pathname.split("/").pop() || ""
+    ).toLowerCase();
+    if (!formationPages.has(currentPage)) return;
+
+    const backBtn = document.createElement("button");
+    backBtn.type = "button";
+    backBtn.id = "backButton";
+    backBtn.setAttribute("aria-label", "Retour");
+    backBtn.className = [
+      "fixed",
+      "left-3",
+      "md:left-8",
+      "z-50",
+      "rounded-lg",
+      "px-3.5",
+      "py-2",
+      "bg-white/70",
+      "backdrop-blur-md",
+      "ring-1",
+      "ring-black/5",
+      "text-gray-700",
+      "shadow",
+      "flex",
+      "items-center",
+      "gap-2",
+      "transition-all",
+      "duration-200",
+      "ease-out",
+      "hover:-translate-y-0.5",
+      "hover:shadow-lg",
+      "hover:bg-[#1b6086]",
+      "hover:text-white",
+      "active:scale-95",
+      "focus:outline-none",
+      "focus-visible:ring-2",
+      "focus-visible:ring-[#1b6086]/40",
+      "focus-visible:ring-offset-2",
+    ].join(" ");
+
+    backBtn.innerHTML = [
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">',
+      '<path d="M10.828 12l4.95-4.95a1 1 0 10-1.414-1.414l-6.364 6.364a1 1 0 000 1.414l6.364 6.364a1 1 0 001.414-1.414L10.828 12z"/>',
+      "</svg>",
+      '<span class="text-sm font-medium">Retour</span>',
+    ].join("");
+
+    // Positionner sous la barre de navigation sticky
+    function positionBackBtn() {
+      const nav = document.getElementById("mainNav");
+      const offset = (nav && nav.offsetHeight ? nav.offsetHeight : 72) + 50; // px
+      backBtn.style.top = offset + "px";
+    }
+    positionBackBtn();
+    window.addEventListener("resize", positionBackBtn);
+
+    // Apparition douce au chargement
+    backBtn.style.opacity = "0";
+    backBtn.style.transform = "translateY(4px)";
+
+    backBtn.addEventListener("click", () => {
+      const sameOrigin =
+        document.referrer &&
+        new URL(document.referrer).origin === window.location.origin;
+      if (sameOrigin && window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.location.href = "formations.html";
+      }
+    });
+
+    document.body.appendChild(backBtn);
+    requestAnimationFrame(() => {
+      backBtn.style.transition = "opacity 200ms ease, transform 200ms ease";
+      backBtn.style.opacity = "1";
+      backBtn.style.transform = "translateY(0)";
+    });
+  })();
+
+  // Event listeners pour le scroll et l'initialisation
+  window.addEventListener("scroll", handleNavbarScroll, { passive: true });
+  handleNavbarScroll();
 });
