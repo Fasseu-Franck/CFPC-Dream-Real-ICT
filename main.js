@@ -293,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       slidesPerView: 1,
       spaceBetween: 30,
-      autoplay: { delay: 5000 },
+      autoplay: { delay: 7000 },
       breakpoints: {
         768: { slidesPerView: 2 },
         1024: { slidesPerView: 3 },
